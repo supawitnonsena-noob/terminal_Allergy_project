@@ -1,0 +1,84 @@
+[0.014s] Invoking command in '/home/supawit/terminal_Allergy_project/ros2_ws/build/velodyne_laserscan': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/supawit/terminal_Allergy_project/ros2_ws/src/velodyne/velodyne_laserscan -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_laserscan
+[0.118s] -- The C compiler identification is GNU 13.3.0
+[0.204s] -- The CXX compiler identification is GNU 13.3.0
+[0.215s] -- Detecting C compiler ABI info
+[0.290s] -- Detecting C compiler ABI info - done
+[0.299s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.300s] -- Detecting C compile features
+[0.300s] -- Detecting C compile features - done
+[0.307s] -- Detecting CXX compiler ABI info
+[0.395s] -- Detecting CXX compiler ABI info - done
+[0.401s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.402s] -- Detecting CXX compile features
+[0.402s] -- Detecting CXX compile features - done
+[0.405s] -- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+[0.540s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.622s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.667s] -- Found rclcpp: 28.1.13 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.739s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.763s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.784s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.813s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.936s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.941s] -- Found rmw_cyclonedds_cpp: 2.2.3 (/opt/ros/jazzy/share/rmw_cyclonedds_cpp/cmake)
+[0.986s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[1.085s] -- Found rclcpp_components: 28.1.13 (/opt/ros/jazzy/share/rclcpp_components/cmake)
+[1.134s] -- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[1.202s] -- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[1.358s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.359s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.359s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/supawit/terminal_Allergy_project/ros2_ws/src/velodyne/velodyne_laserscan/include>
+[1.360s] -- Configured cppcheck exclude dirs and/or files: 
+[1.361s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.362s] -- Configured cpplint exclude dirs and/or files: 
+[1.362s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.363s] -- Configured 'flake8' exclude dirs and/or files: 
+[1.363s] -- Added test 'lint_cmake' to check CMake code style
+[1.365s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.366s] -- Added test 'uncrustify' to check C / C++ code style
+[1.366s] -- Configured uncrustify additional arguments: 
+[1.367s] -- Added test 'xmllint' to check XML markup files
+[1.370s] -- Configuring done (1.3s)
+[1.382s] -- Generating done (0.0s)
+[1.387s] -- Build files have been written to: /home/supawit/terminal_Allergy_project/ros2_ws/build/velodyne_laserscan
+[1.398s] Invoked command in '/home/supawit/terminal_Allergy_project/ros2_ws/build/velodyne_laserscan' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/supawit/terminal_Allergy_project/ros2_ws/src/velodyne/velodyne_laserscan -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_laserscan
+[1.399s] Invoking command in '/home/supawit/terminal_Allergy_project/ros2_ws/build/velodyne_laserscan': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/supawit/terminal_Allergy_project/ros2_ws/build/velodyne_laserscan -- -j10 -l10
+[1.446s] [ 25%] [32mBuilding CXX object CMakeFiles/velodyne_laserscan.dir/src/velodyne_laserscan.cpp.o[0m
+[11.339s] [ 50%] [32m[1mLinking CXX shared library libvelodyne_laserscan.so[0m
+[12.038s] [ 50%] Built target velodyne_laserscan
+[12.078s] [ 75%] [32mBuilding CXX object CMakeFiles/velodyne_laserscan_node.dir/src/node.cpp.o[0m
+[19.024s] [100%] [32m[1mLinking CXX executable velodyne_laserscan_node[0m
+[19.540s] [100%] Built target velodyne_laserscan_node
+[19.561s] Invoked command in '/home/supawit/terminal_Allergy_project/ros2_ws/build/velodyne_laserscan' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/supawit/terminal_Allergy_project/ros2_ws/build/velodyne_laserscan -- -j10 -l10
+[19.562s] Invoking command in '/home/supawit/terminal_Allergy_project/ros2_ws/build/velodyne_laserscan': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/supawit/terminal_Allergy_project/ros2_ws/build/velodyne_laserscan
+[19.575s] -- Install configuration: ""
+[19.576s] -- Execute custom install script
+[19.577s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_laserscan/lib/velodyne_laserscan/velodyne_laserscan_node
+[19.590s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_laserscan/include/velodyne_laserscan/velodyne_laserscan.hpp
+[19.604s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_laserscan/share/velodyne_laserscan/config/default-velodyne_laserscan_node-params.yaml
+[19.620s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_laserscan/share/velodyne_laserscan/launch/velodyne_laserscan_node-composed-launch.py
+[19.636s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_laserscan/share/velodyne_laserscan/launch/velodyne_laserscan_node-launch.py
+[19.652s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_laserscan/share/ament_index/resource_index/package_run_dependencies/velodyne_laserscan
+[19.666s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_laserscan/share/ament_index/resource_index/parent_prefix_path/velodyne_laserscan
+[19.681s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_laserscan/share/velodyne_laserscan/environment/ament_prefix_path.sh
+[19.696s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_laserscan/share/velodyne_laserscan/environment/ament_prefix_path.dsv
+[19.709s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_laserscan/share/velodyne_laserscan/environment/path.sh
+[19.723s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_laserscan/share/velodyne_laserscan/environment/path.dsv
+[19.739s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_laserscan/share/velodyne_laserscan/local_setup.bash
+[19.750s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_laserscan/share/velodyne_laserscan/local_setup.sh
+[19.776s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_laserscan/share/velodyne_laserscan/local_setup.zsh
+[19.791s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_laserscan/share/velodyne_laserscan/local_setup.dsv
+[19.803s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_laserscan/share/velodyne_laserscan/package.dsv
+[19.817s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_laserscan/share/ament_index/resource_index/packages/velodyne_laserscan
+[19.833s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_laserscan/share/ament_index/resource_index/rclcpp_components/velodyne_laserscan
+[19.849s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_laserscan/share/velodyne_laserscan/cmake/ament_cmake_export_include_directories-extras.cmake
+[19.865s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_laserscan/share/velodyne_laserscan/cmake/ament_cmake_export_targets-extras.cmake
+[19.879s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_laserscan/share/velodyne_laserscan/cmake/ament_cmake_export_dependencies-extras.cmake
+[19.894s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_laserscan/share/velodyne_laserscan/cmake/velodyne_laserscanConfig.cmake
+[19.908s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_laserscan/share/velodyne_laserscan/cmake/velodyne_laserscanConfig-version.cmake
+[19.923s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_laserscan/share/velodyne_laserscan/package.xml
+[19.942s] -- Installing: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_laserscan/lib/libvelodyne_laserscan.so
+[19.946s] -- Set non-toolchain portion of runtime path of "/home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_laserscan/lib/libvelodyne_laserscan.so" to ""
+[19.946s] -- Installing: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_laserscan/share/velodyne_laserscan/cmake/velodyne_laserscanExport.cmake
+[19.947s] -- Installing: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_laserscan/share/velodyne_laserscan/cmake/velodyne_laserscanExport-noconfig.cmake
+[19.951s] Invoked command in '/home/supawit/terminal_Allergy_project/ros2_ws/build/velodyne_laserscan' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/supawit/terminal_Allergy_project/ros2_ws/build/velodyne_laserscan

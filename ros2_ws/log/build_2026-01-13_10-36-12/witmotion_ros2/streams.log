@@ -1,0 +1,60 @@
+[0.013s] Invoking command in '/home/supawit/terminal_Allergy_project/ros2_ws/build/witmotion_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/supawit/terminal_Allergy_project/ros2_ws/src/witmotion_ros2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/supawit/terminal_Allergy_project/ros2_ws/install/witmotion_ros2
+[0.113s] -- The C compiler identification is GNU 13.3.0
+[0.192s] -- The CXX compiler identification is GNU 13.3.0
+[0.208s] -- Detecting C compiler ABI info
+[0.283s] -- Detecting C compiler ABI info - done
+[0.291s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.291s] -- Detecting C compile features
+[0.291s] -- Detecting C compile features - done
+[0.299s] -- Detecting CXX compiler ABI info
+[0.375s] -- Detecting CXX compiler ABI info - done
+[0.384s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.384s] -- Detecting CXX compile features
+[0.384s] -- Detecting CXX compile features - done
+[0.392s] -- Found ament_cmake_auto: 2.5.4 (/opt/ros/jazzy/share/ament_cmake_auto/cmake)
+[0.551s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.621s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.663s] -- Found rclcpp: 28.1.13 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.727s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.744s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.764s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.808s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.931s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.937s] -- Found rmw_cyclonedds_cpp: 2.2.3 (/opt/ros/jazzy/share/rmw_cyclonedds_cpp/cmake)
+[0.981s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[1.080s] -- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)
+[1.101s] -- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[1.143s] -- Found tf2: 0.36.16 (/opt/ros/jazzy/share/tf2/cmake)
+[1.158s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: system 
+[1.290s] -- Configuring done (1.3s)
+[1.325s] -- Generating done (0.0s)
+[1.331s] -- Build files have been written to: /home/supawit/terminal_Allergy_project/ros2_ws/build/witmotion_ros2
+[1.344s] Invoked command in '/home/supawit/terminal_Allergy_project/ros2_ws/build/witmotion_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/supawit/terminal_Allergy_project/ros2_ws/src/witmotion_ros2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/supawit/terminal_Allergy_project/ros2_ws/install/witmotion_ros2
+[1.346s] Invoking command in '/home/supawit/terminal_Allergy_project/ros2_ws/build/witmotion_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/supawit/terminal_Allergy_project/ros2_ws/build/witmotion_ros2 -- -j10 -l10
+[1.396s] [ 33%] [32mBuilding CXX object CMakeFiles/witmotion_ros2.dir/src/witmotion_handler.cpp.o[0m
+[1.397s] [ 66%] [32mBuilding CXX object CMakeFiles/witmotion_ros2.dir/src/witmotion_node.cpp.o[0m
+[28.762s] [100%] [32m[1mLinking CXX executable witmotion_ros2[0m
+[30.319s] [100%] Built target witmotion_ros2
+[30.329s] Invoked command in '/home/supawit/terminal_Allergy_project/ros2_ws/build/witmotion_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/supawit/terminal_Allergy_project/ros2_ws/build/witmotion_ros2 -- -j10 -l10
+[30.330s] Invoking command in '/home/supawit/terminal_Allergy_project/ros2_ws/build/witmotion_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/supawit/terminal_Allergy_project/ros2_ws/build/witmotion_ros2
+[30.337s] -- Install configuration: ""
+[30.338s] -- Execute custom install script
+[30.338s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/witmotion_ros2/lib/witmotion_ros2/witmotion_ros2
+[30.348s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/witmotion_ros2/share/witmotion_ros2/launch/witmotion.launch.py
+[30.360s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/witmotion_ros2/share/witmotion_ros2/config/witmotion.yaml
+[30.370s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/witmotion_ros2/share/ament_index/resource_index/package_run_dependencies/witmotion_ros2
+[30.379s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/witmotion_ros2/share/ament_index/resource_index/parent_prefix_path/witmotion_ros2
+[30.389s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/witmotion_ros2/share/witmotion_ros2/environment/ament_prefix_path.sh
+[30.399s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/witmotion_ros2/share/witmotion_ros2/environment/ament_prefix_path.dsv
+[30.407s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/witmotion_ros2/share/witmotion_ros2/environment/path.sh
+[30.414s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/witmotion_ros2/share/witmotion_ros2/environment/path.dsv
+[30.422s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/witmotion_ros2/share/witmotion_ros2/local_setup.bash
+[30.429s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/witmotion_ros2/share/witmotion_ros2/local_setup.sh
+[30.439s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/witmotion_ros2/share/witmotion_ros2/local_setup.zsh
+[30.447s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/witmotion_ros2/share/witmotion_ros2/local_setup.dsv
+[30.454s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/witmotion_ros2/share/witmotion_ros2/package.dsv
+[30.462s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/witmotion_ros2/share/ament_index/resource_index/packages/witmotion_ros2
+[30.469s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/witmotion_ros2/share/witmotion_ros2/cmake/witmotion_ros2Config.cmake
+[30.478s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/witmotion_ros2/share/witmotion_ros2/cmake/witmotion_ros2Config-version.cmake
+[30.485s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/witmotion_ros2/share/witmotion_ros2/package.xml
+[30.495s] Invoked command in '/home/supawit/terminal_Allergy_project/ros2_ws/build/witmotion_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/supawit/terminal_Allergy_project/ros2_ws/build/witmotion_ros2

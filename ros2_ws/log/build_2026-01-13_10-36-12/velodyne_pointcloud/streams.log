@@ -1,0 +1,145 @@
+[0.025s] Invoking command in '/home/supawit/terminal_Allergy_project/ros2_ws/build/velodyne_pointcloud': AMENT_PREFIX_PATH=/home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_msgs:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /home/supawit/terminal_Allergy_project/ros2_ws/src/velodyne/velodyne_pointcloud -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_pointcloud
+[0.081s] -- The C compiler identification is GNU 13.3.0
+[0.143s] -- The CXX compiler identification is GNU 13.3.0
+[0.160s] -- Detecting C compiler ABI info
+[0.273s] -- Detecting C compiler ABI info - done
+[0.283s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.284s] -- Detecting C compile features
+[0.284s] -- Detecting C compile features - done
+[0.295s] -- Detecting CXX compiler ABI info
+[0.420s] -- Detecting CXX compiler ABI info - done
+[0.431s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.431s] -- Detecting CXX compile features
+[0.432s] -- Detecting CXX compile features - done
+[0.438s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.646s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.767s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.836s] -- Found angles: 1.16.1 (/opt/ros/jazzy/share/angles/cmake)
+[0.842s] -- Found diagnostic_updater: 4.2.6 (/opt/ros/jazzy/share/diagnostic_updater/cmake)
+[0.934s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.963s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.996s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.027s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.188s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.188s] -- Found rmw_cyclonedds_cpp: 2.2.3 (/opt/ros/jazzy/share/rmw_cyclonedds_cpp/cmake)
+[1.235s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[1.350s] -- Found geometry_msgs: 5.3.6 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[1.374s] -- Found message_filters: 4.11.9 (/opt/ros/jazzy/share/message_filters/cmake)
+[1.447s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found suitable version "1.83.0", minimum required is "1.65.0") found components: system filesystem iostreams serialization 
+[1.451s] -- looking for PCL_COMMON
+[1.454s] -- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  
+[1.472s] -- Found PCL: pcl_common;Boost::system;Boost::filesystem;Boost::iostreams;Boost::serialization  
+[1.474s] -- Found rclcpp_components: 28.1.13 (/opt/ros/jazzy/share/rclcpp_components/cmake)
+[1.543s] -- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[1.584s] -- Found tf2: 0.36.16 (/opt/ros/jazzy/share/tf2/cmake)
+[1.599s] -- Found tf2_ros: 0.36.16 (/opt/ros/jazzy/share/tf2_ros/cmake)
+[1.720s] -- Found velodyne_msgs: 2.5.1 (/home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_msgs/share/velodyne_msgs/cmake)
+[1.763s] -- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[2.019s] -- Found gtest sources under '/opt/ros/jazzy/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[2.023s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.184s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[2.188s] -- Found Threads: TRUE  
+[2.197s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.201s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.203s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/supawit/terminal_Allergy_project/ros2_ws/src/velodyne/velodyne_pointcloud/include>
+[2.203s] -- Configured cppcheck exclude dirs and/or files: 
+[2.208s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[2.208s] -- Configured cpplint exclude dirs and/or files: 
+[2.208s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.208s] -- Configured 'flake8' exclude dirs and/or files: 
+[2.210s] -- Added test 'lint_cmake' to check CMake code style
+[2.210s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[2.215s] -- Added test 'uncrustify' to check C / C++ code style
+[2.221s] -- Configured uncrustify additional arguments: 
+[2.221s] -- Configuring done (2.2s)
+[2.271s] -- Generating done (0.0s)
+[2.286s] -- Build files have been written to: /home/supawit/terminal_Allergy_project/ros2_ws/build/velodyne_pointcloud
+[2.316s] Invoked command in '/home/supawit/terminal_Allergy_project/ros2_ws/build/velodyne_pointcloud' returned '0': AMENT_PREFIX_PATH=/home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_msgs:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /home/supawit/terminal_Allergy_project/ros2_ws/src/velodyne/velodyne_pointcloud -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_pointcloud
+[2.317s] Invoking command in '/home/supawit/terminal_Allergy_project/ros2_ws/build/velodyne_pointcloud': AMENT_PREFIX_PATH=/home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_msgs:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/supawit/terminal_Allergy_project/ros2_ws/build/velodyne_pointcloud -- -j10 -l10
+[2.418s] [  5%] [32mBuilding CXX object CMakeFiles/velodyne_cloud_types.dir/src/lib/pointcloudXYZIRT.cpp.o[0m
+[2.427s] [ 11%] [32mBuilding CXX object CMakeFiles/velodyne_rawdata.dir/src/lib/rawdata.cpp.o[0m
+[2.428s] [ 16%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[2.434s] [ 22%] [32mBuilding CXX object CMakeFiles/velodyne_cloud_types.dir/src/lib/organized_cloudXYZIRT.cpp.o[0m
+[2.436s] [ 27%] [32mBuilding CXX object CMakeFiles/velodyne_rawdata.dir/src/lib/calibration.cpp.o[0m
+[2.447s] [ 33%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[4.072s] [ 38%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[4.215s] [ 38%] Built target gtest_main
+[10.036s] [ 44%] [32m[1mLinking CXX static library libgtest.a[0m
+[10.128s] [ 44%] Built target gtest
+[10.148s] [ 50%] [32mBuilding CXX object tests/CMakeFiles/test_row_step.dir/test_row_step.cpp.o[0m
+[15.102s] [ 55%] [32m[1mLinking CXX shared library libvelodyne_rawdata.so[0m
+[15.430s] [ 55%] Built target velodyne_rawdata
+[15.467s] [ 61%] [32mBuilding CXX object tests/CMakeFiles/test_calibration.dir/test_calibration.cpp.o[0m
+[15.503s] [ 66%] [32m[1mLinking CXX shared library libvelodyne_cloud_types.so[0m
+[15.939s] [ 66%] Built target velodyne_cloud_types
+[15.964s] [ 72%] [32mBuilding CXX object CMakeFiles/transform.dir/src/conversions/transform.cpp.o[0m
+[17.186s] [ 77%] [32m[1mLinking CXX executable test_calibration[0m
+[17.410s] [ 77%] Built target test_calibration
+[20.107s] [ 83%] [32m[1mLinking CXX executable test_row_step[0m
+[20.543s] [ 83%] Built target test_row_step
+[28.182s] [ 88%] [32m[1mLinking CXX shared library libtransform.so[0m
+[28.523s] [ 88%] Built target transform
+[28.541s] [ 94%] [32mBuilding CXX object CMakeFiles/velodyne_transform_node.dir/src/conversions/transform_node.cpp.o[0m
+[32.636s] [100%] [32m[1mLinking CXX executable velodyne_transform_node[0m
+[32.877s] [100%] Built target velodyne_transform_node
+[32.886s] Invoked command in '/home/supawit/terminal_Allergy_project/ros2_ws/build/velodyne_pointcloud' returned '0': AMENT_PREFIX_PATH=/home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_msgs:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/supawit/terminal_Allergy_project/ros2_ws/build/velodyne_pointcloud -- -j10 -l10
+[32.887s] Invoking command in '/home/supawit/terminal_Allergy_project/ros2_ws/build/velodyne_pointcloud': AMENT_PREFIX_PATH=/home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_msgs:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/supawit/terminal_Allergy_project/ros2_ws/build/velodyne_pointcloud
+[32.893s] -- Install configuration: ""
+[32.894s] -- Execute custom install script
+[32.894s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_pointcloud/lib/velodyne_pointcloud/velodyne_transform_node
+[32.902s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_pointcloud/include/velodyne_pointcloud/calibration.hpp
+[32.909s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_pointcloud/include/velodyne_pointcloud/datacontainerbase.hpp
+[32.917s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_pointcloud/include/velodyne_pointcloud/organized_cloudXYZIRT.hpp
+[32.925s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_pointcloud/include/velodyne_pointcloud/pointcloudXYZIRT.hpp
+[32.932s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_pointcloud/include/velodyne_pointcloud/rawdata.hpp
+[32.941s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_pointcloud/include/velodyne_pointcloud/transform.hpp
+[32.948s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/config/VLP16-velodyne_transform_node-params.yaml
+[32.956s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/config/VLP32C-velodyne_transform_node-params.yaml
+[32.963s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/config/VLS128-velodyne_transform_node-params.yaml
+[32.970s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/launch/velodyne_transform_node-VLP16-composed-launch.py
+[32.977s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/launch/velodyne_transform_node-VLP16-launch.py
+[32.984s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/launch/velodyne_transform_node-VLP32C-composed-launch.py
+[32.991s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/launch/velodyne_transform_node-VLP32C-launch.py
+[33.000s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/launch/velodyne_transform_node-VLS128-composed-launch.py
+[33.007s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/launch/velodyne_transform_node-VLS128-launch.py
+[33.014s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/params/32db.yaml
+[33.021s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/params/64e_s2.1-sztaki.yaml
+[33.028s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/params/64e_s3-xiesc.yaml
+[33.035s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/params/64e_utexas.yaml
+[33.042s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/params/VLP16_hires_db.yaml
+[33.049s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/params/VLP16db.yaml
+[33.055s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/params/VLS128.yaml
+[33.062s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/params/VeloView-VLP-32C.yaml
+[33.068s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/params/issue_84_float_intensities.yaml
+[33.075s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/params/rviz_points.vcg
+[33.084s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/environment/library_path.sh
+[33.090s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/environment/library_path.dsv
+[33.098s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_pointcloud/share/ament_index/resource_index/package_run_dependencies/velodyne_pointcloud
+[33.104s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_pointcloud/share/ament_index/resource_index/parent_prefix_path/velodyne_pointcloud
+[33.111s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/environment/ament_prefix_path.sh
+[33.118s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/environment/ament_prefix_path.dsv
+[33.127s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/environment/path.sh
+[33.134s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/environment/path.dsv
+[33.141s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/local_setup.bash
+[33.148s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/local_setup.sh
+[33.154s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/local_setup.zsh
+[33.163s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/local_setup.dsv
+[33.170s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/package.dsv
+[33.177s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_pointcloud/share/ament_index/resource_index/packages/velodyne_pointcloud
+[33.184s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_pointcloud/share/ament_index/resource_index/rclcpp_components/velodyne_pointcloud
+[33.192s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/cmake/ament_cmake_export_include_directories-extras.cmake
+[33.199s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/cmake/ament_cmake_export_dependencies-extras.cmake
+[33.207s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/cmake/ament_cmake_export_libraries-extras.cmake
+[33.213s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/cmake/ament_cmake_export_targets-extras.cmake
+[33.221s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/cmake/velodyne_pointcloudConfig.cmake
+[33.228s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/cmake/velodyne_pointcloudConfig-version.cmake
+[33.235s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/package.xml
+[33.242s] -- Installing: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_pointcloud/lib/libvelodyne_cloud_types.so
+[33.242s] -- Set non-toolchain portion of runtime path of "/home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_pointcloud/lib/libvelodyne_cloud_types.so" to ""
+[33.243s] -- Installing: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_pointcloud/lib/libvelodyne_rawdata.so
+[33.243s] -- Set non-toolchain portion of runtime path of "/home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_pointcloud/lib/libvelodyne_rawdata.so" to ""
+[33.243s] -- Installing: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_pointcloud/lib/libtransform.so
+[33.248s] -- Set non-toolchain portion of runtime path of "/home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_pointcloud/lib/libtransform.so" to ""
+[33.248s] -- Installing: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/cmake/velodyne_pointcloudExport.cmake
+[33.248s] -- Installing: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/cmake/velodyne_pointcloudExport-noconfig.cmake
+[33.250s] Invoked command in '/home/supawit/terminal_Allergy_project/ros2_ws/build/velodyne_pointcloud' returned '0': AMENT_PREFIX_PATH=/home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_msgs:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/supawit/terminal_Allergy_project/ros2_ws/build/velodyne_pointcloud

@@ -1,0 +1,242 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-0fdbfd8b751f74115510.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				},
+				{
+					"build" : "lidarslam_msgs__py",
+					"jsonFile" : "directory-lidarslam_msgs__py-56b466580090e06302be.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/supawit/terminal_Allergy_project/ros2_ws/build/lidarslam_msgs/lidarslam_msgs__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "lidarslam_msgs",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_lidarslam_msgs_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_lidarslam_msgs_egg-5813826251b29d95cc95.json",
+					"name" : "ament_cmake_python_build_lidarslam_msgs_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_symlink_lidarslam_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_symlink_lidarslam_msgs-f1b1b77c8f6ab29517c6.json",
+					"name" : "ament_cmake_python_symlink_lidarslam_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "lidarslam_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lidarslam_msgs-235d48fd627eed65b034.json",
+					"name" : "lidarslam_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "lidarslam_msgs__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lidarslam_msgs__cpp-c24ed08565e6ce58bf8e.json",
+					"name" : "lidarslam_msgs__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "lidarslam_msgs__py::@3a17392034b5a9cad720",
+					"jsonFile" : "target-lidarslam_msgs__py-c2afe528d9377c83b120.json",
+					"name" : "lidarslam_msgs__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "lidarslam_msgs__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lidarslam_msgs__rosidl_generator_c-ccc994c408bbcb83fb10.json",
+					"name" : "lidarslam_msgs__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "lidarslam_msgs__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lidarslam_msgs__rosidl_generator_py-12eb8bc40799ae9a85b2.json",
+					"name" : "lidarslam_msgs__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "lidarslam_msgs__rosidl_generator_type_description::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lidarslam_msgs__rosidl_generator_type_description-dbda55558c0fc284d7f0.json",
+					"name" : "lidarslam_msgs__rosidl_generator_type_description",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "lidarslam_msgs__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lidarslam_msgs__rosidl_typesupport_c-dfcb1c2fb21ec144f525.json",
+					"name" : "lidarslam_msgs__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "lidarslam_msgs__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lidarslam_msgs__rosidl_typesupport_cpp-760ea3c548cafa428952.json",
+					"name" : "lidarslam_msgs__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "lidarslam_msgs__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lidarslam_msgs__rosidl_typesupport_fastrtps_c-18000772e17fd642b178.json",
+					"name" : "lidarslam_msgs__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "lidarslam_msgs__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lidarslam_msgs__rosidl_typesupport_fastrtps_cpp-efc30b3e077c0a90c4bd.json",
+					"name" : "lidarslam_msgs__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "lidarslam_msgs__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lidarslam_msgs__rosidl_typesupport_introspection_c-7d2a934df830139326ca.json",
+					"name" : "lidarslam_msgs__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "lidarslam_msgs__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lidarslam_msgs__rosidl_typesupport_introspection_cpp-77bafad3d9e05b4fe5ba.json",
+					"name" : "lidarslam_msgs__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "lidarslam_msgs_s__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lidarslam_msgs_s__rosidl_typesupport_c-b200ff4b9993a68547d6.json",
+					"name" : "lidarslam_msgs_s__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "lidarslam_msgs_s__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lidarslam_msgs_s__rosidl_typesupport_fastrtps_c-cc6bfe45aefdf59fd4bc.json",
+					"name" : "lidarslam_msgs_s__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "lidarslam_msgs_s__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lidarslam_msgs_s__rosidl_typesupport_introspection_c-9953a62e3e952183ade6.json",
+					"name" : "lidarslam_msgs_s__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "lidarslam_msgs_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lidarslam_msgs_uninstall-bb9c2bd9472640a8c496.json",
+					"name" : "lidarslam_msgs_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-f746b213c62be16ed85f.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/supawit/terminal_Allergy_project/ros2_ws/build/lidarslam_msgs",
+		"source" : "/home/supawit/terminal_Allergy_project/ros2_ws/src/lidarslam_ros2/lidarslam_msgs"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

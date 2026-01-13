@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-0e6219bf7324a9278990.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "graph_based_slam",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "graph_based_slam_component::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-graph_based_slam_component-3add66404858e36a8819.json",
+					"name" : "graph_based_slam_component",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "graph_based_slam_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-graph_based_slam_node-87d97c5ec1dbfbc7683f.json",
+					"name" : "graph_based_slam_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "graph_based_slam_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-graph_based_slam_uninstall-c6868590f4bcc9b9095d.json",
+					"name" : "graph_based_slam_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-828ea2a427f267260bae.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/supawit/terminal_Allergy_project/ros2_ws/build/graph_based_slam",
+		"source" : "/home/supawit/terminal_Allergy_project/ros2_ws/src/lidarslam_ros2/graph_based_slam"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

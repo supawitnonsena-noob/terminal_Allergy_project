@@ -1,0 +1,227 @@
+[0.007s] Invoking command in '/home/supawit/terminal_Allergy_project/ros2_ws/build/graph_based_slam': AMENT_PREFIX_PATH=/home/supawit/terminal_Allergy_project/ros2_ws/install/ndt_omp_ros2:/home/supawit/terminal_Allergy_project/ros2_ws/install/lidarslam_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/supawit/terminal_Allergy_project/ros2_ws/install/ndt_omp_ros2:/home/supawit/terminal_Allergy_project/ros2_ws/install/lidarslam_msgs:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/supawit/terminal_Allergy_project/ros2_ws/install/lidarslam_msgs/lib:${LD_LIBRARY_PATH} PATH=/home/supawit/terminal_Allergy_project/ros2_ws/install/ndt_omp_ros2/bin:${PATH} PYTHONPATH=/home/supawit/terminal_Allergy_project/ros2_ws/install/lidarslam_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /home/supawit/terminal_Allergy_project/ros2_ws/src/lidarslam_ros2/graph_based_slam -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/supawit/terminal_Allergy_project/ros2_ws/install/graph_based_slam
+[0.050s] -- The C compiler identification is GNU 13.3.0
+[0.091s] -- The CXX compiler identification is GNU 13.3.0
+[0.102s] -- Detecting C compiler ABI info
+[0.168s] -- Detecting C compiler ABI info - done
+[0.174s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.174s] -- Detecting C compile features
+[0.175s] -- Detecting C compile features - done
+[0.181s] -- Detecting CXX compiler ABI info
+[0.255s] -- Detecting CXX compiler ABI info - done
+[0.262s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.262s] -- Detecting CXX compile features
+[0.262s] -- Detecting CXX compile features - done
+[0.266s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.385s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.444s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.503s] -- Found rclcpp: 28.1.13 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.547s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.561s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.577s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.594s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.666s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.669s] -- Found rmw_cyclonedds_cpp: 2.2.3 (/opt/ros/jazzy/share/rmw_cyclonedds_cpp/cmake)
+[0.696s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[0.755s] -- Found rclcpp_components: 28.1.13 (/opt/ros/jazzy/share/rclcpp_components/cmake)
+[0.789s] -- Found geometry_msgs: 5.3.6 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[0.817s] -- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[0.837s] -- Found nav_msgs: 5.3.6 (/opt/ros/jazzy/share/nav_msgs/cmake)
+[0.867s] -- Found std_srvs: 5.3.6 (/opt/ros/jazzy/share/std_srvs/cmake)
+[0.883s] -- Found tf2_ros: 0.36.16 (/opt/ros/jazzy/share/tf2_ros/cmake)
+[0.965s] -- Found tf2_eigen: 0.36.16 (/opt/ros/jazzy/share/tf2_eigen/cmake)
+[0.975s] -- Found tf2_geometry_msgs: 0.36.16 (/opt/ros/jazzy/share/tf2_geometry_msgs/cmake)
+[0.987s] -- Found eigen3_cmake_module: 0.3.0 (/opt/ros/jazzy/share/eigen3_cmake_module/cmake)
+[0.988s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[0.988s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[0.993s] -- Found tf2_sensor_msgs: 0.36.16 (/opt/ros/jazzy/share/tf2_sensor_msgs/cmake)
+[0.998s] -- Found pcl_conversions: 2.6.2 (/opt/ros/jazzy/share/pcl_conversions/cmake)
+[1.059s] [33mCMake Warning (dev) at /usr/lib/x86_64-linux-gnu/cmake/pcl/Modules/FindFLANN.cmake:45 (find_package):
+[1.059s]   Policy CMP0144 is not set: find_package uses upper-case <PACKAGENAME>_ROOT
+[1.059s]   variables.  Run "cmake --help-policy CMP0144" for policy details.  Use the
+[1.059s]   cmake_policy command to set the policy and suppress this warning.
+[1.059s] 
+[1.059s]   CMake variable FLANN_ROOT is set to:
+[1.059s] 
+[1.059s]     /usr
+[1.059s] 
+[1.059s]   For compatibility, find_package is ignoring the variable, but code in a
+[1.059s]   .cmake module might still use it.
+[1.059s] Call Stack (most recent call first):
+[1.059s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:261 (find_package)
+[1.060s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:306 (find_flann)
+[1.060s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:570 (find_external_library)
+[1.060s]   /opt/ros/jazzy/share/pcl_conversions/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[1.060s]   /opt/ros/jazzy/share/pcl_conversions/cmake/pcl_conversionsConfig.cmake:41 (include)
+[1.060s]   CMakeLists.txt:37 (find_package)
+[1.060s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.060s] [0m
+[1.060s] -- Found flann version 1.9.2
+[1.298s] -- Found OpenMP_CXX: -fopenmp (found version "4.5") 
+[1.298s] -- Found OpenMP: TRUE (found version "4.5") found components: CXX 
+[2.279s] -- Checking for module 'libusb-1.0'
+[2.290s] --   Found libusb-1.0, version 1.0.27
+[2.315s] -- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  
+[2.316s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[2.357s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[2.359s] -- Found Pcap: /usr/lib/x86_64-linux-gnu/libpcap.so  
+[2.371s] -- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.3")  
+[2.387s] -- Found PNG: /usr/lib/x86_64-linux-gnu/libpng.so (found version "1.6.43") 
+[2.723s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[2.727s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[3.068s] -- Found Qhull version 8.0.2
+[3.406s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[3.755s] -- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  
+[3.756s] -- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  
+[3.757s] -- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  
+[3.758s] -- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  
+[3.759s] -- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  
+[3.759s] -- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  
+[3.760s] -- Found PCL_2D: /usr/include/pcl-1.14  
+[3.760s] -- Found PCL_GEOMETRY: /usr/include/pcl-1.14  
+[3.761s] -- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  
+[3.762s] -- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  
+[3.763s] -- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  
+[3.763s] -- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  
+[3.764s] -- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  
+[3.765s] -- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  
+[3.766s] -- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  
+[3.767s] -- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  
+[3.768s] -- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  
+[3.769s] -- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  
+[3.770s] -- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  
+[3.771s] -- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  
+[3.771s] -- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.14  
+[3.772s] -- Found PCL_MODELER: /usr/include/pcl-1.14  
+[3.772s] -- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.14  
+[3.773s] -- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  
+[3.774s] -- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  
+[3.776s] -- Found lidarslam_msgs: 0.0.0 (/home/supawit/terminal_Allergy_project/ros2_ws/install/lidarslam_msgs/share/lidarslam_msgs/cmake)
+[3.800s] -- Found ndt_omp_ros2: 0.0.0 (/home/supawit/terminal_Allergy_project/ros2_ws/install/ndt_omp_ros2/share/ndt_omp_ros2/cmake)
+[3.801s] [33mCMake Warning (dev) at CMakeLists.txt:40 (find_package):
+[3.802s]   Policy CMP0074 is not set: find_package uses <PackageName>_ROOT variables.
+[3.802s]   Run "cmake --help-policy CMP0074" for policy details.  Use the cmake_policy
+[3.802s]   command to set the policy and suppress this warning.
+[3.802s] 
+[3.802s]   CMake variable PCL_ROOT is set to:
+[3.802s] 
+[3.802s]     /usr
+[3.802s] 
+[3.802s]   For compatibility, CMake is ignoring the variable.
+[3.802s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[3.802s] [0m
+[3.821s] [33mCMake Warning (dev) at /usr/share/cmake-3.28/Modules/FindOpenGL.cmake:381 (message):
+[3.821s]   Policy CMP0072 is not set: FindOpenGL prefers GLVND by default when
+[3.822s]   available.  Run "cmake --help-policy CMP0072" for policy details.  Use the
+[3.822s]   cmake_policy command to set the policy and suppress this warning.
+[3.822s] 
+[3.822s]   FindOpenGL found both a legacy GL library:
+[3.822s] 
+[3.822s]     OPENGL_gl_LIBRARY: /usr/lib/x86_64-linux-gnu/libGL.so
+[3.822s] 
+[3.822s]   and GLVND libraries for OpenGL and GLX:
+[3.822s] 
+[3.822s]     OPENGL_opengl_LIBRARY: /usr/lib/x86_64-linux-gnu/libOpenGL.so
+[3.822s]     OPENGL_glx_LIBRARY: /usr/lib/x86_64-linux-gnu/libGLX.so
+[3.822s] 
+[3.822s]   OpenGL_GL_PREFERENCE has not been set to "GLVND" or "LEGACY", so for
+[3.822s]   compatibility with CMake 3.10 and below the legacy GL library will be used.
+[3.822s] Call Stack (most recent call first):
+[3.822s]   /usr/share/cmake-3.28/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)
+[3.822s]   /opt/ros/jazzy/lib/cmake/g2o/g2oConfig.cmake:6 (find_dependency)
+[3.822s]   CMakeLists.txt:41 (find_package)
+[3.822s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[3.822s] [0m
+[3.823s] -- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so   
+[3.892s] -- Found OpenMP_C: -fopenmp (found version "4.5") 
+[3.893s] -- Found OpenMP: TRUE (found version "4.5")  
+[3.898s] -- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[4.018s] -- Added test 'copyright' to check source files copyright and LICENSE
+[4.019s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[4.019s] -- Configured cppcheck include dirs: /home/supawit/terminal_Allergy_project/ros2_ws/src/lidarslam_ros2/graph_based_slam/include
+[4.019s] -- Configured cppcheck exclude dirs and/or files: 
+[4.020s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[4.020s] -- Configured cpplint exclude dirs and/or files: 
+[4.021s] -- Added test 'flake8' to check Python code syntax and style conventions
+[4.021s] -- Configured 'flake8' exclude dirs and/or files: 
+[4.021s] -- Added test 'lint_cmake' to check CMake code style
+[4.022s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[4.023s] -- Added test 'uncrustify' to check C / C++ code style
+[4.023s] -- Configured uncrustify additional arguments: 
+[4.023s] -- Added test 'xmllint' to check XML markup files
+[4.026s] -- Configuring done (4.0s)
+[4.078s] -- Generating done (0.0s)
+[4.085s] -- Build files have been written to: /home/supawit/terminal_Allergy_project/ros2_ws/build/graph_based_slam
+[4.105s] Invoked command in '/home/supawit/terminal_Allergy_project/ros2_ws/build/graph_based_slam' returned '0': AMENT_PREFIX_PATH=/home/supawit/terminal_Allergy_project/ros2_ws/install/ndt_omp_ros2:/home/supawit/terminal_Allergy_project/ros2_ws/install/lidarslam_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/supawit/terminal_Allergy_project/ros2_ws/install/ndt_omp_ros2:/home/supawit/terminal_Allergy_project/ros2_ws/install/lidarslam_msgs:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/supawit/terminal_Allergy_project/ros2_ws/install/lidarslam_msgs/lib:${LD_LIBRARY_PATH} PATH=/home/supawit/terminal_Allergy_project/ros2_ws/install/ndt_omp_ros2/bin:${PATH} PYTHONPATH=/home/supawit/terminal_Allergy_project/ros2_ws/install/lidarslam_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /home/supawit/terminal_Allergy_project/ros2_ws/src/lidarslam_ros2/graph_based_slam -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/supawit/terminal_Allergy_project/ros2_ws/install/graph_based_slam
+[4.107s] Invoking command in '/home/supawit/terminal_Allergy_project/ros2_ws/build/graph_based_slam': AMENT_PREFIX_PATH=/home/supawit/terminal_Allergy_project/ros2_ws/install/ndt_omp_ros2:/home/supawit/terminal_Allergy_project/ros2_ws/install/lidarslam_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/supawit/terminal_Allergy_project/ros2_ws/install/ndt_omp_ros2:/home/supawit/terminal_Allergy_project/ros2_ws/install/lidarslam_msgs:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/supawit/terminal_Allergy_project/ros2_ws/install/lidarslam_msgs/lib:${LD_LIBRARY_PATH} PATH=/home/supawit/terminal_Allergy_project/ros2_ws/install/ndt_omp_ros2/bin:${PATH} PYTHONPATH=/home/supawit/terminal_Allergy_project/ros2_ws/install/lidarslam_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/supawit/terminal_Allergy_project/ros2_ws/build/graph_based_slam -- -j10 -l10
+[4.151s] [ 25%] [32mBuilding CXX object CMakeFiles/graph_based_slam_component.dir/src/graph_based_slam_component.cpp.o[0m
+[10.975s] In file included from [01m[K/usr/include/boost/preprocessor/control/if.hpp:18[m[K,
+[10.975s]                  from [01m[K/usr/include/boost/preprocessor/punctuation/comma_if.hpp:18[m[K,
+[10.975s]                  from [01m[K/usr/include/boost/preprocessor/comma_if.hpp:15[m[K,
+[10.975s]                  from [01m[K/usr/include/boost/mpl/aux_/preprocessor/params.hpp:49[m[K,
+[10.975s]                  from [01m[K/usr/include/boost/mpl/aux_/na_spec.hpp:26[m[K,
+[10.975s]                  from [01m[K/usr/include/boost/mpl/not.hpp:20[m[K,
+[10.975s]                  from [01m[K/usr/include/boost/mpl/assert.hpp:17[m[K,
+[10.975s]                  from [01m[K/usr/include/pcl-1.14/pcl/point_struct_traits.h:40[m[K,
+[10.975s]                  from [01m[K/usr/include/pcl-1.14/pcl/type_traits.h:40[m[K,
+[10.975s]                  from [01m[K/usr/include/pcl-1.14/pcl/memory.h:46[m[K,
+[10.976s]                  from [01m[K/usr/include/pcl-1.14/pcl/PCLPointField.h:3[m[K,
+[10.976s]                  from [01m[K/usr/include/pcl-1.14/pcl/conversions.h:46[m[K,
+[10.976s]                  from [01m[K/opt/ros/jazzy/include/pcl_conversions/pcl_conversions/pcl_conversions.h:47[m[K,
+[10.976s]                  from [01m[K/home/supawit/terminal_Allergy_project/ros2_ws/src/lidarslam_ros2/graph_based_slam/include/graph_based_slam/graph_based_slam_component.h:61[m[K,
+[10.976s]                  from [01m[K/home/supawit/terminal_Allergy_project/ros2_ws/src/lidarslam_ros2/graph_based_slam/src/graph_based_slam_component.cpp:1[m[K:
+[10.976s] [01m[K/usr/include/pcl-1.14/pcl/filters/boost.h:46:1:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: This header is deprecated. Please include the needed boost headers directly. (It will be removed in PCL 1.15)[m[K’
+[10.976s]    46 | [01;36m[KPCL_DEPRECATED_HEADER[m[K(1, 15, "Please include the needed boost headers directly.")
+[10.976s]       | [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[62.050s] [ 50%] [32m[1mLinking CXX shared library libgraph_based_slam_component.so[0m
+[63.395s] [ 50%] Built target graph_based_slam_component
+[63.414s] [ 75%] [32mBuilding CXX object CMakeFiles/graph_based_slam_node.dir/src/graph_based_slam_node.cpp.o[0m
+[70.173s] In file included from [01m[K/usr/include/boost/preprocessor/control/if.hpp:18[m[K,
+[70.173s]                  from [01m[K/usr/include/boost/preprocessor/punctuation/comma_if.hpp:18[m[K,
+[70.173s]                  from [01m[K/usr/include/boost/preprocessor/comma_if.hpp:15[m[K,
+[70.173s]                  from [01m[K/usr/include/boost/mpl/aux_/preprocessor/params.hpp:49[m[K,
+[70.173s]                  from [01m[K/usr/include/boost/mpl/aux_/na_spec.hpp:26[m[K,
+[70.173s]                  from [01m[K/usr/include/boost/mpl/not.hpp:20[m[K,
+[70.173s]                  from [01m[K/usr/include/boost/mpl/assert.hpp:17[m[K,
+[70.173s]                  from [01m[K/usr/include/pcl-1.14/pcl/point_struct_traits.h:40[m[K,
+[70.173s]                  from [01m[K/usr/include/pcl-1.14/pcl/type_traits.h:40[m[K,
+[70.173s]                  from [01m[K/usr/include/pcl-1.14/pcl/memory.h:46[m[K,
+[70.173s]                  from [01m[K/usr/include/pcl-1.14/pcl/PCLPointField.h:3[m[K,
+[70.174s]                  from [01m[K/usr/include/pcl-1.14/pcl/conversions.h:46[m[K,
+[70.174s]                  from [01m[K/opt/ros/jazzy/include/pcl_conversions/pcl_conversions/pcl_conversions.h:47[m[K,
+[70.174s]                  from [01m[K/home/supawit/terminal_Allergy_project/ros2_ws/src/lidarslam_ros2/graph_based_slam/include/graph_based_slam/graph_based_slam_component.h:61[m[K,
+[70.174s]                  from [01m[K/home/supawit/terminal_Allergy_project/ros2_ws/src/lidarslam_ros2/graph_based_slam/src/graph_based_slam_node.cpp:1[m[K:
+[70.174s] [01m[K/usr/include/pcl-1.14/pcl/filters/boost.h:46:1:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: This header is deprecated. Please include the needed boost headers directly. (It will be removed in PCL 1.15)[m[K’
+[70.174s]    46 | [01;36m[KPCL_DEPRECATED_HEADER[m[K(1, 15, "Please include the needed boost headers directly.")
+[70.174s]       | [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[77.074s] [100%] [32m[1mLinking CXX executable graph_based_slam_node[0m
+[77.640s] [100%] Built target graph_based_slam_node
+[77.651s] Invoked command in '/home/supawit/terminal_Allergy_project/ros2_ws/build/graph_based_slam' returned '0': AMENT_PREFIX_PATH=/home/supawit/terminal_Allergy_project/ros2_ws/install/ndt_omp_ros2:/home/supawit/terminal_Allergy_project/ros2_ws/install/lidarslam_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/supawit/terminal_Allergy_project/ros2_ws/install/ndt_omp_ros2:/home/supawit/terminal_Allergy_project/ros2_ws/install/lidarslam_msgs:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/supawit/terminal_Allergy_project/ros2_ws/install/lidarslam_msgs/lib:${LD_LIBRARY_PATH} PATH=/home/supawit/terminal_Allergy_project/ros2_ws/install/ndt_omp_ros2/bin:${PATH} PYTHONPATH=/home/supawit/terminal_Allergy_project/ros2_ws/install/lidarslam_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/supawit/terminal_Allergy_project/ros2_ws/build/graph_based_slam -- -j10 -l10
+[77.652s] Invoking command in '/home/supawit/terminal_Allergy_project/ros2_ws/build/graph_based_slam': AMENT_PREFIX_PATH=/home/supawit/terminal_Allergy_project/ros2_ws/install/ndt_omp_ros2:/home/supawit/terminal_Allergy_project/ros2_ws/install/lidarslam_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/supawit/terminal_Allergy_project/ros2_ws/install/ndt_omp_ros2:/home/supawit/terminal_Allergy_project/ros2_ws/install/lidarslam_msgs:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/supawit/terminal_Allergy_project/ros2_ws/install/lidarslam_msgs/lib:${LD_LIBRARY_PATH} PATH=/home/supawit/terminal_Allergy_project/ros2_ws/install/ndt_omp_ros2/bin:${PATH} PYTHONPATH=/home/supawit/terminal_Allergy_project/ros2_ws/install/lidarslam_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/supawit/terminal_Allergy_project/ros2_ws/build/graph_based_slam
+[77.658s] -- Install configuration: ""
+[77.658s] -- Execute custom install script
+[77.658s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/graph_based_slam/share/graph_based_slam/environment/library_path.sh
+[77.665s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/graph_based_slam/share/graph_based_slam/environment/library_path.dsv
+[77.671s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/graph_based_slam/include/graph_based_slam/graph_based_slam_component.h
+[77.679s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/graph_based_slam/share/graph_based_slam/launch/graphbasedslam.launch.py
+[77.686s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/graph_based_slam/share/graph_based_slam/param/graphbasedslam.yaml
+[77.695s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/graph_based_slam/lib/libgraph_based_slam_component.so
+[77.702s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/graph_based_slam/lib/graph_based_slam/graph_based_slam_node
+[77.708s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/graph_based_slam/share/ament_index/resource_index/package_run_dependencies/graph_based_slam
+[77.715s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/graph_based_slam/share/ament_index/resource_index/parent_prefix_path/graph_based_slam
+[77.721s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/graph_based_slam/share/graph_based_slam/environment/ament_prefix_path.sh
+[77.729s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/graph_based_slam/share/graph_based_slam/environment/ament_prefix_path.dsv
+[77.736s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/graph_based_slam/share/graph_based_slam/environment/path.sh
+[77.744s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/graph_based_slam/share/graph_based_slam/environment/path.dsv
+[77.750s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/graph_based_slam/share/graph_based_slam/local_setup.bash
+[77.757s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/graph_based_slam/share/graph_based_slam/local_setup.sh
+[77.764s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/graph_based_slam/share/graph_based_slam/local_setup.zsh
+[77.772s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/graph_based_slam/share/graph_based_slam/local_setup.dsv
+[77.779s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/graph_based_slam/share/graph_based_slam/package.dsv
+[77.785s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/graph_based_slam/share/ament_index/resource_index/packages/graph_based_slam
+[77.792s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/graph_based_slam/share/ament_index/resource_index/rclcpp_components/graph_based_slam
+[77.798s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/graph_based_slam/share/graph_based_slam/cmake/ament_cmake_export_libraries-extras.cmake
+[77.805s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/graph_based_slam/share/graph_based_slam/cmake/ament_cmake_export_include_directories-extras.cmake
+[77.813s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/graph_based_slam/share/graph_based_slam/cmake/graph_based_slamConfig.cmake
+[77.822s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/graph_based_slam/share/graph_based_slam/cmake/graph_based_slamConfig-version.cmake
+[77.829s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/graph_based_slam/share/graph_based_slam/package.xml
+[77.837s] Invoked command in '/home/supawit/terminal_Allergy_project/ros2_ws/build/graph_based_slam' returned '0': AMENT_PREFIX_PATH=/home/supawit/terminal_Allergy_project/ros2_ws/install/ndt_omp_ros2:/home/supawit/terminal_Allergy_project/ros2_ws/install/lidarslam_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/supawit/terminal_Allergy_project/ros2_ws/install/ndt_omp_ros2:/home/supawit/terminal_Allergy_project/ros2_ws/install/lidarslam_msgs:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/supawit/terminal_Allergy_project/ros2_ws/install/lidarslam_msgs/lib:${LD_LIBRARY_PATH} PATH=/home/supawit/terminal_Allergy_project/ros2_ws/install/ndt_omp_ros2/bin:${PATH} PYTHONPATH=/home/supawit/terminal_Allergy_project/ros2_ws/install/lidarslam_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/supawit/terminal_Allergy_project/ros2_ws/build/graph_based_slam

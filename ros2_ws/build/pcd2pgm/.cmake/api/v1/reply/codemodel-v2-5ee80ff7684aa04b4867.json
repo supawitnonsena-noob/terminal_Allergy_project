@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-dbd4204dd8fe944b25de.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "pcd2pgm",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "pcd2pgm::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-pcd2pgm-0bfd3cd4772bcccbce69.json",
+					"name" : "pcd2pgm",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "pcd2pgm_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-pcd2pgm_node-7d462740402f021f3829.json",
+					"name" : "pcd2pgm_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "pcd2pgm_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-pcd2pgm_uninstall-28688553de61a1d8427b.json",
+					"name" : "pcd2pgm_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-012de217b062f6de4124.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/supawit/terminal_Allergy_project/ros2_ws/build/pcd2pgm",
+		"source" : "/home/supawit/terminal_Allergy_project/ros2_ws/src/pcd2pgm"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

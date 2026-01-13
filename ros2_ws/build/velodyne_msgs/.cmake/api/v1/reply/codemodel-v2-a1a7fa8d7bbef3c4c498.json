@@ -1,0 +1,242 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-16d02f79e65e5f7ca200.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				},
+				{
+					"build" : "velodyne_msgs__py",
+					"jsonFile" : "directory-velodyne_msgs__py-c14a61ba0e7a348d4198.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/supawit/terminal_Allergy_project/ros2_ws/build/velodyne_msgs/velodyne_msgs__py",
+					"targetIndexes" : 
+					[
+						5
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "velodyne_msgs",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_velodyne_msgs_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_velodyne_msgs_egg-3baf492824480d4db20a.json",
+					"name" : "ament_cmake_python_build_velodyne_msgs_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_symlink_velodyne_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_symlink_velodyne_msgs-50774d1456a5d3b74a2f.json",
+					"name" : "ament_cmake_python_symlink_velodyne_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-9feae20131b90bfcedf4.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "velodyne_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-velodyne_msgs-27791f87ac63126508cf.json",
+					"name" : "velodyne_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "velodyne_msgs__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-velodyne_msgs__cpp-4dba734551ae30ca5dc0.json",
+					"name" : "velodyne_msgs__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "velodyne_msgs__py::@5458681479641a736de4",
+					"jsonFile" : "target-velodyne_msgs__py-b159df00b686cfd51091.json",
+					"name" : "velodyne_msgs__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "velodyne_msgs__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-velodyne_msgs__rosidl_generator_c-8d12e20eb8d7f919c503.json",
+					"name" : "velodyne_msgs__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "velodyne_msgs__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-velodyne_msgs__rosidl_generator_py-4b2a3b94e6b807a618bd.json",
+					"name" : "velodyne_msgs__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "velodyne_msgs__rosidl_generator_type_description::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-velodyne_msgs__rosidl_generator_type_description-90d7a5d6d893a3b3540c.json",
+					"name" : "velodyne_msgs__rosidl_generator_type_description",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "velodyne_msgs__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-velodyne_msgs__rosidl_typesupport_c-8d9c4ac1270e76ca1c10.json",
+					"name" : "velodyne_msgs__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "velodyne_msgs__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-velodyne_msgs__rosidl_typesupport_cpp-16cbd51d4e09919d0405.json",
+					"name" : "velodyne_msgs__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "velodyne_msgs__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-velodyne_msgs__rosidl_typesupport_fastrtps_c-2354b4dca437e21902cc.json",
+					"name" : "velodyne_msgs__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "velodyne_msgs__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-velodyne_msgs__rosidl_typesupport_fastrtps_cpp-bc5ba1340ca250d40ced.json",
+					"name" : "velodyne_msgs__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "velodyne_msgs__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-velodyne_msgs__rosidl_typesupport_introspection_c-59c673ba0fb3f90bf3af.json",
+					"name" : "velodyne_msgs__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "velodyne_msgs__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-velodyne_msgs__rosidl_typesupport_introspection_cpp-0a4d7e6af9863241e021.json",
+					"name" : "velodyne_msgs__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "velodyne_msgs_s__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-velodyne_msgs_s__rosidl_typesupport_c-818696fafb49ad3211e4.json",
+					"name" : "velodyne_msgs_s__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "velodyne_msgs_s__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-velodyne_msgs_s__rosidl_typesupport_fastrtps_c-94e0b3361e0616ce1e73.json",
+					"name" : "velodyne_msgs_s__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "velodyne_msgs_s__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-velodyne_msgs_s__rosidl_typesupport_introspection_c-9461b135323e2eb8cd13.json",
+					"name" : "velodyne_msgs_s__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "velodyne_msgs_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-velodyne_msgs_uninstall-d969a1dafe8b8f338b18.json",
+					"name" : "velodyne_msgs_uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/supawit/terminal_Allergy_project/ros2_ws/build/velodyne_msgs",
+		"source" : "/home/supawit/terminal_Allergy_project/ros2_ws/src/velodyne/velodyne_msgs"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

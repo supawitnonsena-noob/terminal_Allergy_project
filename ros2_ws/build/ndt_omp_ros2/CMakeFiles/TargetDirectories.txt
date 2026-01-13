@@ -1,0 +1,11 @@
+/home/supawit/terminal_Allergy_project/ros2_ws/build/ndt_omp_ros2/CMakeFiles/uninstall.dir
+/home/supawit/terminal_Allergy_project/ros2_ws/build/ndt_omp_ros2/CMakeFiles/ndt_omp_ros2_uninstall.dir
+/home/supawit/terminal_Allergy_project/ros2_ws/build/ndt_omp_ros2/CMakeFiles/ndt_omp.dir
+/home/supawit/terminal_Allergy_project/ros2_ws/build/ndt_omp_ros2/CMakeFiles/align.dir
+/home/supawit/terminal_Allergy_project/ros2_ws/build/ndt_omp_ros2/CMakeFiles/test.dir
+/home/supawit/terminal_Allergy_project/ros2_ws/build/ndt_omp_ros2/CMakeFiles/edit_cache.dir
+/home/supawit/terminal_Allergy_project/ros2_ws/build/ndt_omp_ros2/CMakeFiles/rebuild_cache.dir
+/home/supawit/terminal_Allergy_project/ros2_ws/build/ndt_omp_ros2/CMakeFiles/list_install_components.dir
+/home/supawit/terminal_Allergy_project/ros2_ws/build/ndt_omp_ros2/CMakeFiles/install.dir
+/home/supawit/terminal_Allergy_project/ros2_ws/build/ndt_omp_ros2/CMakeFiles/install/local.dir
+/home/supawit/terminal_Allergy_project/ros2_ws/build/ndt_omp_ros2/CMakeFiles/install/strip.dir

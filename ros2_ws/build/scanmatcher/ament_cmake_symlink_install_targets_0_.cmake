@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/supawit/terminal_Allergy_project/ros2_ws/build/scanmatcher/libscanmatcher_component.so" "TARGETS" "scanmatcher_component" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")

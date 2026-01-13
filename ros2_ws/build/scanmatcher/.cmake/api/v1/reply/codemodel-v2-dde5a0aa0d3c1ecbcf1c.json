@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-e3253ed96b8abaff6503.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "scanmatcher",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "scanmatcher_component::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-scanmatcher_component-cc51c911593faa769f7d.json",
+					"name" : "scanmatcher_component",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "scanmatcher_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-scanmatcher_node-fdff9777f5c1f457dbab.json",
+					"name" : "scanmatcher_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "scanmatcher_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-scanmatcher_uninstall-7d0f02b69b08a189b650.json",
+					"name" : "scanmatcher_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-5da8026cc919b179da0c.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/supawit/terminal_Allergy_project/ros2_ws/build/scanmatcher",
+		"source" : "/home/supawit/terminal_Allergy_project/ros2_ws/src/lidarslam_ros2/scanmatcher"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

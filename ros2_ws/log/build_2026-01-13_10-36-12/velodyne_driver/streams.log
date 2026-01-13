@@ -1,0 +1,112 @@
+[0.013s] Invoking command in '/home/supawit/terminal_Allergy_project/ros2_ws/build/velodyne_driver': AMENT_PREFIX_PATH=/home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_msgs:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /home/supawit/terminal_Allergy_project/ros2_ws/src/velodyne/velodyne_driver -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_driver
+[0.087s] -- The C compiler identification is GNU 13.3.0
+[0.167s] -- The CXX compiler identification is GNU 13.3.0
+[0.184s] -- Detecting C compiler ABI info
+[0.278s] -- Detecting C compiler ABI info - done
+[0.285s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.285s] -- Detecting C compile features
+[0.285s] -- Detecting C compile features - done
+[0.294s] -- Detecting CXX compiler ABI info
+[0.404s] -- Detecting CXX compiler ABI info - done
+[0.411s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.411s] -- Detecting CXX compile features
+[0.411s] -- Detecting CXX compile features - done
+[0.415s] -- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+[0.639s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.721s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.774s] -- Found diagnostic_updater: 4.2.6 (/opt/ros/jazzy/share/diagnostic_updater/cmake)
+[0.839s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.863s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.893s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.927s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.125s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.130s] -- Found rmw_cyclonedds_cpp: 2.2.3 (/opt/ros/jazzy/share/rmw_cyclonedds_cpp/cmake)
+[1.182s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[1.307s] -- Found rclcpp_components: 28.1.13 (/opt/ros/jazzy/share/rclcpp_components/cmake)
+[1.376s] -- Found tf2_ros: 0.36.16 (/opt/ros/jazzy/share/tf2_ros/cmake)
+[1.560s] -- Found velodyne_msgs: 2.5.1 (/home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_msgs/share/velodyne_msgs/cmake)
+[1.590s] -- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[1.786s] -- Found gtest sources under '/opt/ros/jazzy/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[1.792s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.931s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.932s] -- Found Threads: TRUE  
+[1.941s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.944s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.945s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/supawit/terminal_Allergy_project/ros2_ws/src/velodyne/velodyne_driver/include>
+[1.945s] -- Configured cppcheck exclude dirs and/or files: 
+[1.948s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.948s] -- Configured cpplint exclude dirs and/or files: 
+[1.952s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.952s] -- Configured 'flake8' exclude dirs and/or files: 
+[1.952s] -- Added test 'lint_cmake' to check CMake code style
+[1.953s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.957s] -- Added test 'uncrustify' to check C / C++ code style
+[1.957s] -- Configured uncrustify additional arguments: 
+[1.959s] -- Added test 'xmllint' to check XML markup files
+[1.969s] -- Configuring done (1.9s)
+[2.023s] -- Generating done (0.0s)
+[2.044s] -- Build files have been written to: /home/supawit/terminal_Allergy_project/ros2_ws/build/velodyne_driver
+[2.097s] Invoked command in '/home/supawit/terminal_Allergy_project/ros2_ws/build/velodyne_driver' returned '0': AMENT_PREFIX_PATH=/home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_msgs:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /home/supawit/terminal_Allergy_project/ros2_ws/src/velodyne/velodyne_driver -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_driver
+[2.099s] Invoking command in '/home/supawit/terminal_Allergy_project/ros2_ws/build/velodyne_driver': AMENT_PREFIX_PATH=/home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_msgs:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/supawit/terminal_Allergy_project/ros2_ws/build/velodyne_driver -- -j10 -l10
+[2.201s] [  8%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[2.207s] [ 16%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[2.228s] [ 25%] [32mBuilding CXX object CMakeFiles/velodyne_input.dir/src/lib/input.cpp.o[0m
+[3.563s] [ 33%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[3.865s] [ 33%] Built target gtest_main
+[8.388s] [ 41%] [32m[1mLinking CXX static library libgtest.a[0m
+[8.663s] [ 41%] Built target gtest
+[10.549s] [ 50%] [32m[1mLinking CXX shared library libvelodyne_input.so[0m
+[10.916s] [ 50%] Built target velodyne_input
+[10.967s] [ 58%] [32mBuilding CXX object CMakeFiles/velodyne_driver.dir/src/driver/driver.cpp.o[0m
+[10.978s] [ 66%] [32mBuilding CXX object CMakeFiles/time_test.dir/tests/timeconversiontest.cpp.o[0m
+[16.691s] [ 75%] [32m[1mLinking CXX executable time_test[0m
+[17.031s] [ 75%] Built target time_test
+[23.737s] [ 83%] [32m[1mLinking CXX shared library libvelodyne_driver.so[0m
+[24.064s] [ 83%] Built target velodyne_driver
+[24.081s] [ 91%] [32mBuilding CXX object CMakeFiles/velodyne_driver_node.dir/src/driver/velodyne_node.cpp.o[0m
+[26.660s] [100%] [32m[1mLinking CXX executable velodyne_driver_node[0m
+[26.874s] [100%] Built target velodyne_driver_node
+[26.883s] Invoked command in '/home/supawit/terminal_Allergy_project/ros2_ws/build/velodyne_driver' returned '0': AMENT_PREFIX_PATH=/home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_msgs:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/supawit/terminal_Allergy_project/ros2_ws/build/velodyne_driver -- -j10 -l10
+[26.884s] Invoking command in '/home/supawit/terminal_Allergy_project/ros2_ws/build/velodyne_driver': AMENT_PREFIX_PATH=/home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_msgs:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/supawit/terminal_Allergy_project/ros2_ws/build/velodyne_driver
+[26.891s] -- Install configuration: ""
+[26.891s] -- Execute custom install script
+[26.891s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_driver/lib/velodyne_driver/velodyne_driver_node
+[26.901s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_driver/include/velodyne_driver/driver.hpp
+[26.908s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_driver/include/velodyne_driver/input.hpp
+[26.916s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_driver/include/velodyne_driver/time_conversion.hpp
+[26.924s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_driver/share/velodyne_driver/config/VLP16-velodyne_driver_node-params.yaml
+[26.931s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_driver/share/velodyne_driver/config/VLP32C-velodyne_driver_node-params.yaml
+[26.942s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_driver/share/velodyne_driver/config/VLS128-velodyne_driver_node-params.yaml
+[26.952s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_driver/share/velodyne_driver/launch/velodyne_driver_node-VLP16-composed-launch.py
+[26.959s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_driver/share/velodyne_driver/launch/velodyne_driver_node-VLP16-launch.py
+[26.966s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_driver/share/velodyne_driver/launch/velodyne_driver_node-VLP32C-composed-launch.py
+[26.973s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_driver/share/velodyne_driver/launch/velodyne_driver_node-VLP32C-launch.py
+[26.982s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_driver/share/velodyne_driver/launch/velodyne_driver_node-VLS128-composed-launch.py
+[26.989s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_driver/share/velodyne_driver/launch/velodyne_driver_node-VLS128-launch.py
+[26.997s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_driver/lib/velodyne_driver/vdump
+[27.004s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_driver/share/ament_index/resource_index/package_run_dependencies/velodyne_driver
+[27.012s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_driver/share/ament_index/resource_index/parent_prefix_path/velodyne_driver
+[27.019s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_driver/share/velodyne_driver/environment/ament_prefix_path.sh
+[27.027s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_driver/share/velodyne_driver/environment/ament_prefix_path.dsv
+[27.034s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_driver/share/velodyne_driver/environment/path.sh
+[27.042s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_driver/share/velodyne_driver/environment/path.dsv
+[27.049s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_driver/share/velodyne_driver/local_setup.bash
+[27.056s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_driver/share/velodyne_driver/local_setup.sh
+[27.064s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_driver/share/velodyne_driver/local_setup.zsh
+[27.072s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_driver/share/velodyne_driver/local_setup.dsv
+[27.079s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_driver/share/velodyne_driver/package.dsv
+[27.087s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_driver/share/ament_index/resource_index/packages/velodyne_driver
+[27.094s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_driver/share/ament_index/resource_index/rclcpp_components/velodyne_driver
+[27.101s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_driver/share/velodyne_driver/cmake/ament_cmake_export_include_directories-extras.cmake
+[27.110s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_driver/share/velodyne_driver/cmake/ament_cmake_export_targets-extras.cmake
+[27.118s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_driver/share/velodyne_driver/cmake/ament_cmake_export_dependencies-extras.cmake
+[27.125s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_driver/share/velodyne_driver/cmake/velodyne_driverConfig.cmake
+[27.132s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_driver/share/velodyne_driver/cmake/velodyne_driverConfig-version.cmake
+[27.139s] -- Symlinking: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_driver/share/velodyne_driver/package.xml
+[27.148s] -- Installing: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_driver/lib/libvelodyne_input.so
+[27.148s] -- Set non-toolchain portion of runtime path of "/home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_driver/lib/libvelodyne_input.so" to ""
+[27.148s] -- Installing: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_driver/lib/libvelodyne_driver.so
+[27.151s] -- Set non-toolchain portion of runtime path of "/home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_driver/lib/libvelodyne_driver.so" to ""
+[27.151s] -- Installing: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_driver/share/velodyne_driver/cmake/velodyne_driverExport.cmake
+[27.152s] -- Installing: /home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_driver/share/velodyne_driver/cmake/velodyne_driverExport-noconfig.cmake
+[27.153s] Invoked command in '/home/supawit/terminal_Allergy_project/ros2_ws/build/velodyne_driver' returned '0': AMENT_PREFIX_PATH=/home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_msgs:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/supawit/terminal_Allergy_project/ros2_ws/install/velodyne_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/supawit/terminal_Allergy_project/ros2_ws/build/velodyne_driver

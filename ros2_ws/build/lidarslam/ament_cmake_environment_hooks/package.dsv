@@ -1,0 +1,4 @@
+source;share/lidarslam/local_setup.bash
+source;share/lidarslam/local_setup.dsv
+source;share/lidarslam/local_setup.sh
+source;share/lidarslam/local_setup.zsh

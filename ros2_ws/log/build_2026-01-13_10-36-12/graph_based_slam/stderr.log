@@ -1,0 +1,90 @@
+[33mCMake Warning (dev) at /usr/lib/x86_64-linux-gnu/cmake/pcl/Modules/FindFLANN.cmake:45 (find_package):
+  Policy CMP0144 is not set: find_package uses upper-case <PACKAGENAME>_ROOT
+  variables.  Run "cmake --help-policy CMP0144" for policy details.  Use the
+  cmake_policy command to set the policy and suppress this warning.
+
+  CMake variable FLANN_ROOT is set to:
+
+    /usr
+
+  For compatibility, find_package is ignoring the variable, but code in a
+  .cmake module might still use it.
+Call Stack (most recent call first):
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:261 (find_package)
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:306 (find_flann)
+  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:570 (find_external_library)
+  /opt/ros/jazzy/share/pcl_conversions/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /opt/ros/jazzy/share/pcl_conversions/cmake/pcl_conversionsConfig.cmake:41 (include)
+  CMakeLists.txt:37 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+[33mCMake Warning (dev) at CMakeLists.txt:40 (find_package):
+  Policy CMP0074 is not set: find_package uses <PackageName>_ROOT variables.
+  Run "cmake --help-policy CMP0074" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  CMake variable PCL_ROOT is set to:
+
+    /usr
+
+  For compatibility, CMake is ignoring the variable.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+[33mCMake Warning (dev) at /usr/share/cmake-3.28/Modules/FindOpenGL.cmake:381 (message):
+  Policy CMP0072 is not set: FindOpenGL prefers GLVND by default when
+  available.  Run "cmake --help-policy CMP0072" for policy details.  Use the
+  cmake_policy command to set the policy and suppress this warning.
+
+  FindOpenGL found both a legacy GL library:
+
+    OPENGL_gl_LIBRARY: /usr/lib/x86_64-linux-gnu/libGL.so
+
+  and GLVND libraries for OpenGL and GLX:
+
+    OPENGL_opengl_LIBRARY: /usr/lib/x86_64-linux-gnu/libOpenGL.so
+    OPENGL_glx_LIBRARY: /usr/lib/x86_64-linux-gnu/libGLX.so
+
+  OpenGL_GL_PREFERENCE has not been set to "GLVND" or "LEGACY", so for
+  compatibility with CMake 3.10 and below the legacy GL library will be used.
+Call Stack (most recent call first):
+  /usr/share/cmake-3.28/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)
+  /opt/ros/jazzy/lib/cmake/g2o/g2oConfig.cmake:6 (find_dependency)
+  CMakeLists.txt:41 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+In file included from [01m[K/usr/include/boost/preprocessor/control/if.hpp:18[m[K,
+                 from [01m[K/usr/include/boost/preprocessor/punctuation/comma_if.hpp:18[m[K,
+                 from [01m[K/usr/include/boost/preprocessor/comma_if.hpp:15[m[K,
+                 from [01m[K/usr/include/boost/mpl/aux_/preprocessor/params.hpp:49[m[K,
+                 from [01m[K/usr/include/boost/mpl/aux_/na_spec.hpp:26[m[K,
+                 from [01m[K/usr/include/boost/mpl/not.hpp:20[m[K,
+                 from [01m[K/usr/include/boost/mpl/assert.hpp:17[m[K,
+                 from [01m[K/usr/include/pcl-1.14/pcl/point_struct_traits.h:40[m[K,
+                 from [01m[K/usr/include/pcl-1.14/pcl/type_traits.h:40[m[K,
+                 from [01m[K/usr/include/pcl-1.14/pcl/memory.h:46[m[K,
+                 from [01m[K/usr/include/pcl-1.14/pcl/PCLPointField.h:3[m[K,
+                 from [01m[K/usr/include/pcl-1.14/pcl/conversions.h:46[m[K,
+                 from [01m[K/opt/ros/jazzy/include/pcl_conversions/pcl_conversions/pcl_conversions.h:47[m[K,
+                 from [01m[K/home/supawit/terminal_Allergy_project/ros2_ws/src/lidarslam_ros2/graph_based_slam/include/graph_based_slam/graph_based_slam_component.h:61[m[K,
+                 from [01m[K/home/supawit/terminal_Allergy_project/ros2_ws/src/lidarslam_ros2/graph_based_slam/src/graph_based_slam_component.cpp:1[m[K:
+[01m[K/usr/include/pcl-1.14/pcl/filters/boost.h:46:1:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: This header is deprecated. Please include the needed boost headers directly. (It will be removed in PCL 1.15)[m[K’
+   46 | [01;36m[KPCL_DEPRECATED_HEADER[m[K(1, 15, "Please include the needed boost headers directly.")
+      | [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/boost/preprocessor/control/if.hpp:18[m[K,
+                 from [01m[K/usr/include/boost/preprocessor/punctuation/comma_if.hpp:18[m[K,
+                 from [01m[K/usr/include/boost/preprocessor/comma_if.hpp:15[m[K,
+                 from [01m[K/usr/include/boost/mpl/aux_/preprocessor/params.hpp:49[m[K,
+                 from [01m[K/usr/include/boost/mpl/aux_/na_spec.hpp:26[m[K,
+                 from [01m[K/usr/include/boost/mpl/not.hpp:20[m[K,
+                 from [01m[K/usr/include/boost/mpl/assert.hpp:17[m[K,
+                 from [01m[K/usr/include/pcl-1.14/pcl/point_struct_traits.h:40[m[K,
+                 from [01m[K/usr/include/pcl-1.14/pcl/type_traits.h:40[m[K,
+                 from [01m[K/usr/include/pcl-1.14/pcl/memory.h:46[m[K,
+                 from [01m[K/usr/include/pcl-1.14/pcl/PCLPointField.h:3[m[K,
+                 from [01m[K/usr/include/pcl-1.14/pcl/conversions.h:46[m[K,
+                 from [01m[K/opt/ros/jazzy/include/pcl_conversions/pcl_conversions/pcl_conversions.h:47[m[K,
+                 from [01m[K/home/supawit/terminal_Allergy_project/ros2_ws/src/lidarslam_ros2/graph_based_slam/include/graph_based_slam/graph_based_slam_component.h:61[m[K,
+                 from [01m[K/home/supawit/terminal_Allergy_project/ros2_ws/src/lidarslam_ros2/graph_based_slam/src/graph_based_slam_node.cpp:1[m[K:
+[01m[K/usr/include/pcl-1.14/pcl/filters/boost.h:46:1:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: This header is deprecated. Please include the needed boost headers directly. (It will be removed in PCL 1.15)[m[K’
+   46 | [01;36m[KPCL_DEPRECATED_HEADER[m[K(1, 15, "Please include the needed boost headers directly.")
+      | [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
