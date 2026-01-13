@@ -64,7 +64,7 @@ rosdep install --from-paths src --ignore-src -r -y
 ### Build Workspace (อาจใช้เวลาสักพัก)
 colcon build --symlink-install
 
-##3. ติดตั้งสภาพแวดล้อม Python (Setup Frontend Environment)
+## 3. ติดตั้งสภาพแวดล้อม Python (Setup Frontend Environment)
 เราจะสร้าง Virtual Environment (venv) เพื่อลง Library เสริม โดยเปิดโหมดให้มองเห็น ROS 2 ได้ด้วย
 
 # กลับมาที่โฟลเดอร์หลัก
