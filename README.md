@@ -17,6 +17,7 @@ terminal_Allergy_project/
 │       ├── velodyne/        # Driver สำหรับ Lidar VLP-16
 │       └── ...
 └── venv/                    # Environment: (สร้างเองตอนติดตั้ง) สำหรับเก็บ Library Python แยก
+,,,
 ✅ สิ่งที่ต้องมี (Prerequisites)
 
     OS: Ubuntu 24.04 LTS (Noble Numbat)
@@ -73,4 +74,3 @@ source venv/bin/activate
 
 # 4. รันโปรแกรม GUI
 python3 gui_app/main.py
-```
