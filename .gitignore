@@ -1,9 +1,9 @@
-# --- Python & Venv (ห้ามอัพ venv เด็ดขาด) ---
+# --- Python & Venv 
 venv/
 __pycache__/
 *.pyc
 
-# --- ROS 2 Build Artifacts (ห้ามอัพพวกที่ compile แล้ว) ---
+# --- ROS 2 Build Artifacts 
 ros_ws/build/
 ros_ws/install/
 ros_ws/log/
@@ -11,7 +11,7 @@ ros_ws/log/
 # --- IDE Settings ---
 .vscode/
 
-# --- Large Data Files (ไฟล์ข้อมูลใหญ่ๆ) ---
+# --- Large Data Files 
 *.pcd
 *.bag
 *.mcap
