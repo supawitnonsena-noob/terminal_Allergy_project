@@ -36,9 +36,26 @@ git clone https://github.com/supawitnonsena-noob/terminal_Allergy_project.git
 ### 2. ติดตั้งระบบหลังบ้าน (Setup Backend - ROS 2)
 ขั้นตอนนี้จะติดตั้ง Driver และ Build ระบบ SLAM ให้พร้อมใช้งาน
 
-# ติดตั้ง System Dependencies ที่จำเป็น
-sudo apt update
-sudo apt install python3-venv python3-tk ros-jazzy-pcl-ros
+# Setup [Environment] (venv)
+ส่วนนี้สร้างกล่องเก็บ Library (Open3D, Matplotlib) เพื่อไม่ให้ตีกับระบบหลัก
+# 1. กลับมาที่โฟลเดอร์โปรเจกต์หลัก
+```
+cd ~/terminal_Allergy_project
+```
+# 2. ติดตั้งตัวสร้าง venv (ถ้ายังไม่มี)
+```
+sudo apt install -y python3-venv
+```
+# 3. สร้าง venv **(สำคัญมาก: ต้องมี --system-site-packages เพื่อให้เห็น ROS)**
+```
+python3 -m venv venv --system-site-packages
+```
+# 4. เปิดใช้งาน venv
+source venv/bin/activate
+
+# 5. ติดตั้ง Library ที่โค้ดเราต้องใช้
+pip install numpy open3d matplotlib Pillow
+
 
 # ติดตั้ง ROS Dependencies
 cd ~/terminal_Allergy_project/ros2_ws
