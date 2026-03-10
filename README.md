@@ -5,7 +5,7 @@ Terminal Allergy Project 🤧 (V2)
 
 📂 โครงสร้างโปรเจกต์ (Project Structure)
 Plaintext
-
+```
 terminal_Allergy_project/
 ├── gui_app/                 # Frontend: โค้ดโปรแกรม Python GUI หลัก
 │   ├── main.py              # ไฟล์รันโปรแกรมหลัก
@@ -16,6 +16,8 @@ terminal_Allergy_project/
 │   │   ├── velodyne/        # Driver สำหรับ LiDAR VLP-16
 │   │   └── witmotion_ros2/  # Driver สำหรับ IMU Witmotion
 └── venv/                    # Environment: (สร้างเองตอนติดตั้ง) สำหรับเก็บ Library Python แยก
+
+```
 ✅ สิ่งที่ต้องมี (Prerequisites)
 
 OS: Ubuntu 24.04 LTS (Noble Numbat)
