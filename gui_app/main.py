@@ -633,8 +633,21 @@ class MappingPanel:
         lb_save = tk.LabelFrame(self.frame, text="2. Save Map", font=("Arial", 10, "bold"), fg="green")
         lb_save.pack(fill="x", pady=5)
         
-        self.btn_save_map = tk.Button(lb_save, text="💾 SAVE MAP (Service Call)", bg="#a5d6a7", command=self.save_map, height=2)
-        self.btn_save_map.pack(fill="x", padx=10, pady=5)
+        # 2.1 Standard Save (LidarSLAM Service Call)
+        f_std = tk.Frame(lb_save)
+        f_std.pack(fill="x", padx=5, pady=5)
+        self.btn_save_map = tk.Button(f_std, text="💾 SAVE MAP (Standard Service Call)", bg="#a5d6a7", command=self.save_map)
+        self.btn_save_map.pack(fill="x", expand=True)
+
+        # 2.2 MOLA Save (เพิ่มใหม่ตามที่ขอ)
+        f_mola = tk.Frame(lb_save)
+        f_mola.pack(fill="x", padx=5, pady=5)
+        tk.Label(f_mola, text="MOLA Map Name:").pack(side="left")
+        self.mola_map_name = tk.StringVar(value="my_mola_map")
+        tk.Entry(f_mola, textvariable=self.mola_map_name, width=20).pack(side="left", padx=5)
+        
+        self.btn_save_mola = tk.Button(f_mola, text="💾 SAVE MOLA MAP (.pcd & .pgm)", bg="#81d4fa", command=self.save_mola_map)
+        self.btn_save_mola.pack(side="left", fill="x", expand=True, padx=5)
 
         # --- UI Group 3: Log ---
         lb_log = tk.LabelFrame(self.frame, text="Mapping Log")
@@ -656,12 +669,9 @@ class MappingPanel:
     def start_mapping(self):
         home_dir = os.path.expanduser('~')
         ws_setup = f"{home_dir}/terminal_Allergy_project/ros2_ws/install/setup.bash"
-        
         cmd = f"source /opt/ros/jazzy/setup.bash && source {ws_setup} && ros2 launch lidarslam lidarslam.launch.py"
         
         self.log(f"Starting SLAM...")
-        self.log(f"Command: {cmd}")
-        
         try:
             self.process = subprocess.Popen(
                 f"bash -c '{cmd}'", 
@@ -672,10 +682,7 @@ class MappingPanel:
                 text=True
             )
             self.btn_start_map.config(text="⏹ Stop Mapping", bg="#ffcccb", fg="red")
-            
-            # เปิด Thread ใหม่คอยอ่าน Log จาก ROS 2 มาโชว์ในกล่องข้อความ
             threading.Thread(target=self.read_process_output, daemon=True).start()
-            
         except Exception as e:
             self.log(f"Error starting mapping: {e}")
 
@@ -701,21 +708,64 @@ class MappingPanel:
     def save_map(self):
         cmd = "ros2 service call /map_save std_srvs/srv/Empty" 
         self.log(f"Calling Service: /map_save...")
-        
         def run_save():
             try:
                 full_cmd = f"bash -c 'source /opt/ros/jazzy/setup.bash && {cmd}'"
                 result = subprocess.run(full_cmd, shell=True, capture_output=True, text=True)
                 if result.returncode == 0:
-                    self.frame.after(0, lambda: self.log("✅ Map Saved Successfully!"))
-                    self.frame.after(0, lambda: self.log(result.stdout))
+                    self.frame.after(0, lambda: self.log("✅ Standard Map Saved!"))
                 else:
                     self.frame.after(0, lambda: self.log("❌ Failed to save map."))
-                    self.frame.after(0, lambda: self.log(result.stderr))
             except Exception as e:
                 self.frame.after(0, lambda: self.log(f"Error: {e}"))
-
         threading.Thread(target=run_save, daemon=True).start()
+
+    # ====== ฟังก์ชันสำหรับ Save MOLA Map (ตัวใหม่) ======
+    def save_mola_map(self):
+        # 1. ดึงชื่อไฟล์จากช่องกรอก
+        name = self.mola_map_name.get().strip()
+        if not name: name = "mola_map"
+        
+        # 2. สร้างโฟลเดอร์ mapfiles ในโปรเจกต์ (ถ้ายังไม่มี)
+        save_path = os.path.join(CURRENT_DIR, "mapfiles")
+        os.makedirs(save_path, exist_ok=True)
+        
+        # 3. เตรียมรันไฟล์สคริปต์
+        script_path = os.path.join(CURRENT_DIR, "save_mola_map.py")
+        if not os.path.exists(script_path):
+            self.log(f"❌ Error: ไม่พบไฟล์ {script_path}")
+            self.log("กรุณาสร้างไฟล์ save_mola_map.py ไว้โฟลเดอร์เดียวกับ main.py")
+            return
+
+        cmd = f"source /opt/ros/jazzy/setup.bash && python3 {script_path} --name {name} --path {save_path}"
+        self.log(f"Saving MOLA Map as '{name}' to {save_path} ...")
+
+        def run_mola_save():
+            try:
+                # ล็อกปุ่มกันกดซ้ำ
+                self.frame.after(0, lambda: self.btn_save_mola.config(state="disabled", text="⏳ Saving..."))
+                
+                process = subprocess.Popen(
+                    f"bash -c '{cmd}'", 
+                    shell=True, preexec_fn=os.setsid, 
+                    stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True
+                )
+                
+                # อ่าน Log จาก MOLA Script มาโชว์บนจอแบบสดๆ
+                for line in iter(process.stdout.readline, ''):
+                    if line:
+                        self.frame.after(0, lambda l=line.strip(): self.log(f"[MOLA] {l}"))
+                process.wait()
+                self.frame.after(0, lambda: self.log("✅ MOLA Save Process Finished."))
+                
+            except Exception as e:
+                self.frame.after(0, lambda: self.log(f"Error: {e}"))
+            finally:
+                # ปลดล็อกปุ่ม
+                self.frame.after(0, lambda: self.btn_save_mola.config(state="normal", text="💾 SAVE MOLA MAP (.pcd & .pgm)"))
+
+        # รันใน Thread เพื่อไม่ให้ GUI ค้าง
+        threading.Thread(target=run_mola_save, daemon=True).start()
 
     def cleanup(self):
         if self.process:
