@@ -208,12 +208,10 @@ class ROS2RecorderPanel:
         self.run_cmd("LiDAR", cmd, self.btn_lidar)
 
     def toggle_imu(self):
-        # [แก้ไข] อ้างอิงไฟล์จากโฟลเดอร์ปัจจุบัน
         launch_path = os.path.join(CURRENT_DIR, "imu_system.launch.py")
         if not os.path.exists(launch_path):
             self.log(f"Error: Launch file not found at {launch_path}")
             return
-        # [แก้ไข] ไม่ระบุ Path เต็มเวลา source workspace
         cmd = f"source install/setup.bash && ros2 launch {launch_path}"
         self.run_cmd("IMU", cmd, self.btn_imu)
 
@@ -234,7 +232,6 @@ class ROS2RecorderPanel:
         else:
             name = self.bag_name.get().strip()
             if not name: name = "rec_data"
-            # [แก้ไข] บันทึกในโฟลเดอร์ bagfiles ที่อยู่ในโฟลเดอร์ปัจจุบัน
             save_path = os.path.join(CURRENT_DIR, "bagfiles")
             os.makedirs(save_path, exist_ok=True)
             full_name = f"{name}_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
@@ -657,17 +654,37 @@ class MappingPanel:
             self.start_mapping()
 
     def start_mapping(self):
-        # [แก้ไข] ลบการ fix โฟลเดอร์ ~/ros2_ws ออก และให้เรียกใช้ source จาก environment ปัจจุบันที่กำลังรันอยู่เลย
-        cmd = f"source /opt/ros/jazzy/setup.bash && source install/setup.bash && ros2 launch lidarslam lidarslam.launch.py"
+        home_dir = os.path.expanduser('~')
+        ws_setup = f"{home_dir}/terminal_Allergy_project/ros2_ws/install/setup.bash"
+        
+        cmd = f"source /opt/ros/jazzy/setup.bash && source {ws_setup} && ros2 launch lidarslam lidarslam.launch.py"
         
         self.log(f"Starting SLAM...")
         self.log(f"Command: {cmd}")
         
         try:
-            self.process = subprocess.Popen(f"bash -c '{cmd}'", shell=True, preexec_fn=os.setsid)
+            self.process = subprocess.Popen(
+                f"bash -c '{cmd}'", 
+                shell=True, 
+                preexec_fn=os.setsid,
+                stdout=subprocess.PIPE,
+                stderr=subprocess.STDOUT,
+                text=True
+            )
             self.btn_start_map.config(text="⏹ Stop Mapping", bg="#ffcccb", fg="red")
+            
+            # เปิด Thread ใหม่คอยอ่าน Log จาก ROS 2 มาโชว์ในกล่องข้อความ
+            threading.Thread(target=self.read_process_output, daemon=True).start()
+            
         except Exception as e:
             self.log(f"Error starting mapping: {e}")
+
+    def read_process_output(self):
+        if self.process:
+            for line in iter(self.process.stdout.readline, ''):
+                if line:
+                    self.frame.after(0, lambda l=line.strip(): self.log(f"[ROS] {l}"))
+            self.process.stdout.close()
 
     def stop_mapping(self):
         if self.process:
@@ -715,7 +732,6 @@ class PCDMasterApp:
         self.root.geometry("800x1000")
 
         try:
-            # [แก้ไข] อ้างอิงไอคอนจากโฟลเดอร์ปัจจุบันที่โปรแกรมรันอยู่
             icon_path = os.path.join(CURRENT_DIR, "app_icon.png")
             if os.path.exists(icon_path):
                 self.img_icon = tk.PhotoImage(file=icon_path)
