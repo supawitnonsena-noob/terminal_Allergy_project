@@ -11,6 +11,10 @@ import time
 from datetime import datetime
 from PIL import Image, ImageTk
 
+# --- ตัวแปรจัดการ Path เพื่อให้รันได้ทุกเครื่อง ---
+# ดึง Path ของโฟลเดอร์ที่ไฟล์ Python นี้ตั้งอยู่แบบอัตโนมัติ
+CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
+
 # --- ROS 2 Imports (Try/Except เพื่อกัน Error ถ้ารันนอก ROS environment) ---
 HAS_ROS = False
 try:
@@ -140,15 +144,12 @@ class ROS2RecorderPanel:
         self.monitor_thread.start()
 
     def on_sensor_update(self, l_hz, l_status, i_hz, i_status):
-        # ใช้ after เพื่อ update GUI บน Main Thread อย่างปลอดภัย
         self.frame.after(0, lambda: self._update_ui_health(l_hz, l_status, i_hz, i_status))
 
     def _update_ui_health(self, l_hz, l_status, i_hz, i_status):
         text = f"Lidar: {l_hz}Hz | IMU: {i_hz}Hz"
-        
-        # Check logic
         is_bad = False
-        if l_status == "LOW" and l_hz > 0: # >0 เพื่อกันตอนเพิ่งเริ่ม
+        if l_status == "LOW" and l_hz > 0:
             text += " ⚠️ LIDAR LOW!"
             is_bad = True
         if i_status == "LOW" and i_hz > 0:
@@ -157,7 +158,6 @@ class ROS2RecorderPanel:
             
         if is_bad:
             self.lbl_sensor_health.config(text=text, fg="red", font=("Consolas", 9, "bold"))
-            # แจ้งลง Log ด้วย
             self.log(f"WARNING: Sensor Lag! L={l_hz}Hz, I={i_hz}Hz")
         else:
             self.lbl_sensor_health.config(text=text, fg="green", font=("Consolas", 9))
@@ -196,23 +196,25 @@ class ROS2RecorderPanel:
                 except subprocess.TimeoutExpired: 
                     self.log(f"{key} did not stop gracefully. Force killing...")
                     os.killpg(os.getpgid(proc.pid), signal.SIGTERM)
-                    
             except Exception as e:
                 self.log(f"Error stopping {key}: {e}")
             
             del self.processes[key]
             original_text = btn_widget.cget("text").replace("⏹ Stop ", "")
             btn_widget.config(text=f"▶ Start {original_text}", bg="#e0e0e0")
+
     def toggle_lidar(self):
         cmd = "source /opt/ros/jazzy/setup.bash && ros2 launch velodyne velodyne-all-nodes-VLP16-launch.py"
         self.run_cmd("LiDAR", cmd, self.btn_lidar)
 
     def toggle_imu(self):
-        launch_path = f"{os.path.expanduser('~')}/imu_system.launch.py"
+        # [แก้ไข] อ้างอิงไฟล์จากโฟลเดอร์ปัจจุบัน
+        launch_path = os.path.join(CURRENT_DIR, "imu_system.launch.py")
         if not os.path.exists(launch_path):
             self.log(f"Error: Launch file not found at {launch_path}")
             return
-        cmd = f"source ~/ros2_ws/install/setup.bash && ros2 launch {launch_path}"
+        # [แก้ไข] ไม่ระบุ Path เต็มเวลา source workspace
+        cmd = f"source install/setup.bash && ros2 launch {launch_path}"
         self.run_cmd("IMU", cmd, self.btn_imu)
 
     def toggle_tf(self):
@@ -232,7 +234,8 @@ class ROS2RecorderPanel:
         else:
             name = self.bag_name.get().strip()
             if not name: name = "rec_data"
-            save_path = os.path.expanduser("~/lidsrT1/bagfiles/")
+            # [แก้ไข] บันทึกในโฟลเดอร์ bagfiles ที่อยู่ในโฟลเดอร์ปัจจุบัน
+            save_path = os.path.join(CURRENT_DIR, "bagfiles")
             os.makedirs(save_path, exist_ok=True)
             full_name = f"{name}_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
             
@@ -246,7 +249,6 @@ class ROS2RecorderPanel:
             self.lbl_rec_status.config(text="Status: 🔴 RECORDING...", fg="red")
             
     def cleanup(self):
-        # ฟังก์ชันปิด Thread เมื่อปิดโปรแกรม
         if self.monitor_thread:
             self.monitor_thread.stop()
             self.monitor_thread.join()
@@ -343,12 +345,11 @@ class PCDProcessorPanel:
         self.frame.pack(fill="both", expand=True, padx=10, pady=10)
         self.root = root_tk
         
-        # ตัวแปร State
         self.input_path = tk.StringVar()
         self.output_base = tk.StringVar()
         self.manual_transformed_pcd = None 
         self.current_processed_pcd = None
-        self.pcd_original = None # เก็บค่า Original ไว้สำหรับกดปุ่ม Test
+        self.pcd_original = None 
         
         self.save_pcd = tk.BooleanVar(value=True)
         self.save_map = tk.BooleanVar(value=True)
@@ -374,7 +375,6 @@ class PCDProcessorPanel:
         self.std_ratio = tk.DoubleVar(value=1.0)
         tk.Entry(f2, textvariable=self.std_ratio, width=8).grid(row=0, column=3, sticky="w")
         
-        # เพิ่มปุ่ม Test Denoise กลับมา
         self.btn_test_denoise = tk.Button(f2, text="▶ Test Denoise", bg="#bbdefb", command=self.run_test_denoise)
         self.btn_test_denoise.grid(row=0, column=4, padx=10)
 
@@ -435,13 +435,11 @@ class PCDProcessorPanel:
             base = os.path.splitext(filename)[0] + "_processed"
             self.output_base.set(base)
             
-            # Reset UI
             self.btn_analyze.config(state="disabled")
             self.btn_transform.config(state="normal")
             self.manual_transformed_pcd = None 
             self.lbl_transform_status.config(text="Status: Using Original Position", fg="gray")
             
-            # Load into memory for Test Denoise to work
             self.log(f"Loading: {os.path.basename(filename)}")
             self.pcd_original = o3d.io.read_point_cloud(filename)
 
@@ -466,14 +464,12 @@ class PCDProcessorPanel:
         nb = self.nb_neighbors.get()
         ratio = self.std_ratio.get()
         
-        # Calculate
         cl, ind = self.pcd_original.remove_statistical_outlier(nb_neighbors=nb, std_ratio=ratio)
         pcd_clean = self.pcd_original.select_by_index(ind)
         pcd_noise = self.pcd_original.select_by_index(ind, invert=True)
         
-        # Paint
-        pcd_clean.paint_uniform_color([0, 1, 0]) # Green = Keep
-        pcd_noise.paint_uniform_color([1, 0, 0]) # Red = Remove
+        pcd_clean.paint_uniform_color([0, 1, 0])
+        pcd_noise.paint_uniform_color([1, 0, 0])
         
         self.log(f"Result: Removed {len(self.pcd_original.points) - len(pcd_clean.points)} points")
         self.log("Opening Preview (Green=Keep, Red=Remove)...")
@@ -507,7 +503,6 @@ class PCDProcessorPanel:
         self.btn_process.config(state="disabled", text="Processing...")
         self.log("-" * 40)
         try:
-            # 1. Use manual transform if available, else load original
             if self.manual_transformed_pcd:
                 self.log(f"Using Transformed PCD...")
                 pcd = copy.deepcopy(self.manual_transformed_pcd)
@@ -517,7 +512,6 @@ class PCDProcessorPanel:
 
             if not pcd.has_points(): return
 
-            # 2. Denoise
             nb = self.nb_neighbors.get()
             ratio = self.std_ratio.get()
             self.log(f"Cleaning Noise (nb={nb}, std={ratio})...")
@@ -528,7 +522,6 @@ class PCDProcessorPanel:
             final_pcd = pcd_clean
             self.current_processed_pcd = final_pcd
 
-            # Save
             if self.save_pcd.get():
                 pcd_name = output_base + ".pcd"
                 o3d.io.write_point_cloud(pcd_name, final_pcd)
@@ -625,19 +618,17 @@ class PCDProcessorPanel:
         pass
 
 # ================= CLASS 5: MAPPING PANEL (Tab 3) =================
-# ส่วนที่เพิ่มเข้ามาใหม่สำหรับ Mapping
 class MappingPanel:
     def __init__(self, parent):
         self.frame = tk.Frame(parent)
         self.frame.pack(fill="both", expand=True, padx=10, pady=10)
         
-        self.process = None # เก็บ Process ของ Mapping
+        self.process = None
         
         # --- UI Group 1: Mapping Control ---
         lb_map = tk.LabelFrame(self.frame, text="1. SLAM Control", font=("Arial", 10, "bold"), fg="blue")
         lb_map.pack(fill="x", pady=5)
         
-        # ปุ่ม Start Mapping (Toggle แบบ Start/Stop)
         self.btn_start_map = tk.Button(lb_map, text="▶ Start Mapping (LidarSLAM)", bg="#e0e0e0", command=self.toggle_mapping, height=2)
         self.btn_start_map.pack(fill="x", padx=10, pady=5)
         
@@ -645,7 +636,6 @@ class MappingPanel:
         lb_save = tk.LabelFrame(self.frame, text="2. Save Map", font=("Arial", 10, "bold"), fg="green")
         lb_save.pack(fill="x", pady=5)
         
-        # ปุ่ม Save Map (One-shot command)
         self.btn_save_map = tk.Button(lb_save, text="💾 SAVE MAP (Service Call)", bg="#a5d6a7", command=self.save_map, height=2)
         self.btn_save_map.pack(fill="x", padx=10, pady=5)
 
@@ -661,26 +651,20 @@ class MappingPanel:
         self.log_area.see(tk.END)
 
     def toggle_mapping(self):
-        # ถ้ามี Process รันอยู่ -> สั่งหยุด
         if self.process:
             self.stop_mapping()
         else:
             self.start_mapping()
 
     def start_mapping(self):
-        # คำสั่ง Start Mapping: cd ros2_ws && source install/setup.bash && ros2 launch ...
-        # ใช้ os.path.expanduser('~') เพื่อให้มั่นใจว่าหา path เจอ
-        ws_path = os.path.expanduser('~/ros2_ws')
-        cmd = f"cd {ws_path} && source /opt/ros/jazzy/setup.bash && source install/setup.bash && ros2 launch lidarslam lidarslam.launch.py"
+        # [แก้ไข] ลบการ fix โฟลเดอร์ ~/ros2_ws ออก และให้เรียกใช้ source จาก environment ปัจจุบันที่กำลังรันอยู่เลย
+        cmd = f"source /opt/ros/jazzy/setup.bash && source install/setup.bash && ros2 launch lidarslam lidarslam.launch.py"
         
         self.log(f"Starting SLAM...")
         self.log(f"Command: {cmd}")
         
         try:
-            # ใช้ setsid เพื่อให้ kill process ลูกทั้งหมดได้ง่ายๆ
             self.process = subprocess.Popen(f"bash -c '{cmd}'", shell=True, preexec_fn=os.setsid)
-            
-            # เปลี่ยนสีและข้อความปุ่ม
             self.btn_start_map.config(text="⏹ Stop Mapping", bg="#ffcccb", fg="red")
         except Exception as e:
             self.log(f"Error starting mapping: {e}")
@@ -694,20 +678,15 @@ class MappingPanel:
                 self.log(f"Error killing process: {e}")
             
             self.process = None
-            # คืนค่าปุ่ม
             self.btn_start_map.config(text="▶ Start Mapping (LidarSLAM)", bg="#e0e0e0", fg="black")
             self.log("SLAM Stopped.")
 
     def save_map(self):
-        # คำสั่ง Save Map (Service Call)
-        # ใช้ std_srvs/srv/Empty
         cmd = "ros2 service call /map_save std_srvs/srv/Empty" 
-        
         self.log(f"Calling Service: /map_save...")
         
         def run_save():
             try:
-                # ต้อง source setup ก่อนเรียก service call ด้วย เพื่อความชัวร์
                 full_cmd = f"bash -c 'source /opt/ros/jazzy/setup.bash && {cmd}'"
                 result = subprocess.run(full_cmd, shell=True, capture_output=True, text=True)
                 if result.returncode == 0:
@@ -719,7 +698,6 @@ class MappingPanel:
             except Exception as e:
                 self.frame.after(0, lambda: self.log(f"Error: {e}"))
 
-        # รันใน Thread แยกเพื่อไม่ให้ GUI ค้าง
         threading.Thread(target=run_save, daemon=True).start()
 
     def cleanup(self):
@@ -737,7 +715,8 @@ class PCDMasterApp:
         self.root.geometry("800x1000")
 
         try:
-            icon_path = os.path.expanduser("~/lidsrT1/app_icon.png")
+            # [แก้ไข] อ้างอิงไอคอนจากโฟลเดอร์ปัจจุบันที่โปรแกรมรันอยู่
+            icon_path = os.path.join(CURRENT_DIR, "app_icon.png")
             if os.path.exists(icon_path):
                 self.img_icon = tk.PhotoImage(file=icon_path)
                 self.root.iconphoto(True, self.img_icon)
@@ -747,24 +726,19 @@ class PCDMasterApp:
         except Exception as e:
             print(f"Error loading icon: {e}")
         
-        # จัดการปิดโปรแกรม
         self.root.protocol("WM_DELETE_WINDOW", self.on_close)
         
-        # --- TAB System ---
         self.notebook = ttk.Notebook(root)
         self.notebook.pack(fill="both", expand=True)
         
-        # Tab 1: Recorder
         self.tab1 = tk.Frame(self.notebook)
         self.notebook.add(self.tab1, text="🔴 Tab 1: Data Recorder")
         self.recorder_panel = ROS2RecorderPanel(self.tab1)
         
-        # Tab 2: Processor
         self.tab2 = tk.Frame(self.notebook)
         self.notebook.add(self.tab2, text="⚙️ Tab 2: Processor")
         PCDProcessorPanel(self.tab2, root)
 
-        # Tab 3: Map (เพิ่มใหม่)
         self.tab3 = tk.Frame(self.notebook)
         self.notebook.add(self.tab3, text="🗺️ Tab 3: MAP")
         self.mapping_panel = MappingPanel(self.tab3)
@@ -783,15 +757,12 @@ class PCDMasterApp:
                 except: pass
             self.recorder_panel.cleanup()
 
-        # 3. Shutdown ROS Cleanly
         if HAS_ROS and rclpy.ok():
             try:
                 rclpy.shutdown()
             except: pass
 
         print("Application Closed. All nodes Cleanup.")
-        
-
         self.root.destroy()
 
 if __name__ == "__main__":
