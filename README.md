@@ -128,4 +128,5 @@ python3 gui_app/main.py
 
 ```
 
+วีดีโอสอนติดตั้ง
 https://youtu.be/Q8vRc2G-AHU?si=CxiIC53zqH7QBB86
