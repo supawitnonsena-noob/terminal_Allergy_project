@@ -1,1 +1,0 @@
-/home/supawit/terminal_Allergy_project/ros2_ws/src/lidarslam_ros2/Thirdparty/ndt_omp_ros2/include/pclomp/voxel_grid_covariance_omp.h

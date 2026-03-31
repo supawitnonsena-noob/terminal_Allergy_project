@@ -1,1 +1,0 @@
-/home/supawit/terminal_Allergy_project/ros2_ws/build/scanmatcher/ament_cmake_environment_hooks/local_setup.sh

@@ -1,1 +1,0 @@
-/home/supawit/terminal_Allergy_project/ros2_ws/build/ndt_omp_ros2/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake

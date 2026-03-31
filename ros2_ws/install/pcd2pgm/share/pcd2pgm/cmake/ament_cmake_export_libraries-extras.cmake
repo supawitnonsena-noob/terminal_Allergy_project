@@ -1,1 +1,0 @@
-/home/supawit/terminal_Allergy_project/ros2_ws/build/pcd2pgm/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake
