@@ -1,4 +1,4 @@
-Terminal Allergy Project 🤧 (V2)
+Nebula3DMapping Tool  ชื่อ เดิมคือ Terminal Allergy Project 🤧 (V2) (เดี๋ยวจะกลับมาแก้คู่มือเป็นปัจจุบันหลังเสร็จจากทำเรื่องจบการศึกษานะครับ)(จ้างทำงานได้นะครับเป็นคนว่างงานอยู่)
 โปรแกรม GUI สำหรับควบคุมระบบ LiDAR SLAM และประมวลผล Point Cloud (PCD) แบบครบวงจร พัฒนาด้วย Python และ ROS 2 Jazzy
 
 โปรเจกต์นี้ใช้โครงสร้างแบบ Hybrid Workspace คือแยกส่วน Backend (ROS 2 Packages สำหรับ SLAM และ Drivers ของเซนเซอร์) และ Frontend (Python GUI) ออกจากกันเพื่อความยืดหยุ่นในการพัฒนา
