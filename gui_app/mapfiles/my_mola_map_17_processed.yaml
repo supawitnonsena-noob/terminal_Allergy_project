@@ -1,0 +1,6 @@
+image: my_mola_map_17_processed.pgm
+resolution: 0.05
+origin: [-27.07489585876465, -15.090837478637695, 0.0]
+negate: 0
+occupied_thresh: 0.65
+free_thresh: 0.196

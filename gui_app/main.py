@@ -778,7 +778,7 @@ class PCDMasterApp:
         try:
             self.root.tk.call('wm', 'iconname', self.root._w, "TerminalAllergy")
         except: pass
-        self.root.title("Terminal Allergy V2 ")
+        self.root.title("Nebula3DMapping Tool ")
         self.root.geometry("800x1000")
 
         try:
